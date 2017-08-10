@@ -1,0 +1,1065 @@
+/*New Stuff (lb)*/
+$default: #c64c34;
+$hover: #e85520;
+$active: #863423;
+
+* {box-sizing:border-box;}
+
+.initH {
+    opacity: 1;
+}
+*, html, body {
+    font-family: "din-2014",'helvetica', 'arial', sans-serif;
+}
+body {overflow: visible}
+
+a, button, input[type="submit"] {transition:color 100ms ease-in-out, border 100ms ease-in-out, background 100ms ease-in-out}
+.messageBox,
+#signup-success {
+  font-size: 11px;
+  margin: .5rem 0 0;
+}
+
+* {outline:none !important;}
+
+
+.valid {
+  border-color: #fff !important;
+}
+.error input[type="submit"] {
+  background: #999;
+  pointer-events: none;
+}
+.site-nav-layout {z-index: 30;}
+
+
+
+.g-recaptcha {margin: 8px auto 10px;
+    > div {margin: 0 auto !important; width: 100% !important;}
+}
+
+
+/*End*/
+
+
+/* COLORS */
+.dark-red {color:#6c302a}
+.red { color:$default }
+.gold {color:#ffa200}
+
+.b--red{border-color:$default}
+
+.bg-near-white{background-color:rgb(250,250,250)}
+.bg-red { background-color:$default }
+.bg-washed-yellow{background-color:#fef8ef}
+
+.hover-red:hover { color:$hover }
+.hover-light-silver:hover{color:$hover}
+.hover-light-silver:active{color:$active}
+
+.hover-bg-light-silver:active {
+    background: $active;
+    border-color: $active;
+    color:#fff;    
+}
+/* COLORS */
+
+
+.f-10{font-size:.625rem}
+.f-13{font-size:.8125rem}
+.f-30{font-size:1.875rem}
+.f-32{font-size:2rem}
+.f-50{font-size:3.125rem}
+.h-2{height:0.125rem}
+.h-4{height:.25rem}
+.lh-copy{line-height: 1.66}
+.mw-50{max-width:50rem}
+.mw-63{max-width:63.625rem}
+.mw-67{max-width:67.625rem}
+.mw-80 {max-width:80rem}
+.mw-84 {max-width:84rem}
+.pb_6{padding-bottom:.6rem}
+.tracked-narrow {letter-spacing: .05rem}
+.w-4{width:.25rem}
+.w-20{width:1.25rem}
+
+@media screen and (min-width:30em) {
+    .f-18-ns{font-size:1.125rem}
+    .f-30-ns{font-size:1.875rem}
+    .f-50-ns{font-size:3.125em}
+    .h-4-ns{height:.25rem}
+    .h-6-ns {height:.375rem}
+    .w-6-ns {width:.375rem}
+    .w-40-ns{width:2.5rem}
+}
+@media screen and (min-width:70em) {
+    .db-xl{display:block}
+    .di-xl{display:inline}
+    .dn-xl{display:none}
+    .f5-xl{font-size:1rem}
+    .flex-xl{display:-webkit-box;display:-ms-flexbox;display:flex}
+    .flex-row-reverse-xl{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
+    .fw8-xl{font-weight:800}
+    .h-100-xl{height:100%}
+    .items-center-xl{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+    .justify-between-xl{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+    .mb0-xl{margin-bottom:0}
+    .mw-80-xl {max-width:80rem}
+    .pb0-xl{padding-bottom:0}
+    .ph1-xl{padding-left:.25rem;padding-right:.25rem}
+    .static-xl {position:static}
+    .tl-xl {text-align: left}
+}
+
+
+
+
+body {-webkit-font-smoothing:antialiased;}
+
+body.overflow-hidden {overflow: hidden}
+.ie-flex-shrink { -ms-flex: 0 1 auto; }
+
+/* ------------------------------------------------ NAV ------------------------------------------------- */
+nav {height:3.75rem}
+// .navbar-wrap {
+//     .navbar_links {float: left;}
+//     .navbar_actions {float: right;}
+// }
+/* -------------- Social Links -------------- */
+#social-links {
+    top: -1px;
+    text-align: center;
+    
+    // width:9.56rem;
+    position: relative;
+    z-index: 10;
+    float: left;
+    margin: 0;
+}
+#account-buttons {
+    float: right;
+    margin: 0;
+    position: relative;
+    z-index: 10;
+    a {margin-right: 6px;}
+    &:last-child {margin: 0;}
+}
+#social-links a {
+    flex: 1 0 auto;
+    height: 1.1875rem;
+    margin: 0 6px;
+
+    &:hover {
+        svg {fill: $hover;}
+    }
+    &:active {
+        svg {fill: $active;}
+    }
+}
+#social-links a:nth-child(1) {width:0.5625rem}
+#social-links a:nth-child(2),
+#social-links a:nth-child(3) {width:1rem}
+#social-links a:nth-child(4),
+#social-links a:nth-child(5) {width:1.125rem}
+#social-links a > svg {height: 1.1875rem}
+#social-links a:nth-child(1) > svg {width:0.5625rem}
+#social-links a:nth-child(2) > svg,
+#social-links a:nth-child(3) > svg {width:1rem}
+#social-links a:nth-child(4) > svg,
+#social-links a:nth-child(5) > svg {width:1.125rem}
+/* ------------ End Social Links ------------ */
+
+#page-nav {
+    a {margin: 0 16px 0 0;}
+}
+/* -------- Sign Up & Log In Buttons -------- */
+#account-buttons {
+    width:15.16rem;
+    display: block;
+    
+}
+#account-buttons a {
+    // flex: 1 0 auto;
+    height:2.5rem;
+    float: left;
+    padding-top:.625rem;
+}
+#account-buttons a.b--red {
+    &:hover {
+        color: #fff;
+        background:$hover;
+        border-color:$hover;
+    }
+    &:active {
+        color: #fff;
+        background:$active;
+        border-color:$active;
+    }
+}
+
+/* ------ End Sign Up & Log In Buttons ------ */
+
+/* ------------ Active Nav Color ------------ */
+.active {color:#aaa}
+/* ---------- End Active Nav Color ---------- */
+
+@media screen and (max-width:70em) {
+    #social-links {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    #page-nav {
+        margin-bottom: 40px;
+        padding: 0;
+        a {
+            margin: 0 auto 10px;
+            font-size:19px;
+            letter-spacing: .75px;
+        }
+    }
+    /* -------------- End Page Nav -------------- */
+
+    #account-buttons {
+        width:auto;
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+        
+        
+        a {
+            float: none;
+            display: inline-block;
+            margin: 0 auto 8px;
+        }
+    }
+}
+@media screen and (min-width:70em) {
+    /* ---------------- Page Nav ---------------- */
+    #page-nav {padding-top:.0625rem}
+    // #page-nav a {margin-right:1.4rem}
+    /* -------------- End Page Nav -------------- */
+
+    #social-links { margin-right:1.94rem }
+    #account-buttons {width:auto}
+}
+@media screen and (min-width:81em) {
+    /* ---------------- Page Nav ---------------- */
+    // #page-nav a {margin-right:1.8125rem}
+    /* -------------- End Page Nav -------------- */
+
+
+    /* -------- Sign Up & Log In Buttons -------- */
+    #account-buttons a:nth-child(1) {width:10.94rem}
+    #account-buttons a:nth-child(2) {width:6.81rem}
+    /* ------ End Sign Up & Log In Buttons ------ */
+}
+/* ---------------------------------------------- END NAV ----------------------------------------------- */
+
+
+
+
+
+
+
+
+/* ----------------------------------------------- HEADER ----------------------------------------------- */
+
+#header-cta {
+    padding-top:6.25rem;
+    width:15.625rem
+}
+#header-cta a{
+    font-size: 15px;
+    padding: 18px 24px;
+    margin-top: 24px;
+}
+#header-cta a:hover {
+    background: $hover;
+    border-color: $hover;
+}
+#header-cta a:active {
+    background: $active;
+    border-color: $active;
+}
+
+@media screen and (min-width:23.4375em) {
+    #header-cta {padding-top:9.375rem}
+}
+@media screen and (min-width:30em) {
+    #header-cta{
+        padding-top:15.25rem;
+        width:22.4375rem
+    }
+}
+
+/* --------------------------------------------- END HEADER --------------------------------------------- */
+
+
+
+
+
+
+
+
+/* ------------------------------------------------ MAIN ------------------------------------------------ */
+main {
+    background: url('../images/top-background.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 300%;
+    border-top:.75rem solid #6c302a
+}
+@media screen and (min-width:30em) {
+    main {background-size: 62.5rem 39.9375rem}
+}
+@media screen and (min-width:60em) {
+    main {background-size:155rem 99.125rem}
+}
+/* ----------------------------------------------- END MAIN ---------------------------------------------- */
+
+
+
+
+
+
+
+
+/* ---------------------------------------------- OVERVIEW ---------------------------------------------- */
+#overview h1 {
+    line-height: 96%;
+    margin-top:3.875rem
+}
+#goals {margin-top:2rem;}
+#goals div {width:30%;}
+#goals div:nth-child(1) {background:url('../images/skull.svg') no-repeat center bottom;}
+#goals div:nth-child(2) {background:url('../images/flare.svg') no-repeat center bottom;}
+#goals div:nth-child(3) {background:url('../images/IE/helicopter.png') no-repeat right top;}
+
+/* IE10+ Hack */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    #goals div:nth-child(1) {
+        background-size:220px 135px !important;
+        background:url('../images/IE/skull.png') no-repeat center center;
+    }
+
+    // #goals div:nth-child(1) {background:url('../images/IE/skull.png') no-repeat center bottom;}
+    #goals div:nth-child(2) {background:url('../images/IE/flare.png') no-repeat center bottom;}
+    #goals div:nth-child(3) {background:url('../images/IE/helicopter.png') no-repeat right top;}
+}
+/* IE10+ Hack */
+/* Overriding IE10+ hack in Edge */
+@supports (-ms-ime-align:auto) {
+    #goals div:nth-child(1) {background:url('../images/skull.svg') no-repeat center bottom;}
+    #goals div:nth-child(2) {background:url('../images/flare.svg') no-repeat center bottom;}
+    #goals div:nth-child(3) {background:url('../images/helicopter.svg') no-repeat right top;}
+}
+/* Overriding IE10+ hack in Edge */
+
+#goals div > p {font-size:.875rem;}
+
+/* Video Embed*/
+#embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+#embed-container iframe, #embed-container object, #embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* End Video Embed */
+
+#summary {
+    margin-top:3rem;
+    padding: 0 2.5rem;
+}
+#summary div {
+    // height:4.5rem;
+    height: 6.25rem;
+    margin-bottom: 1.25rem;
+    width:50%
+}
+#summary div:nth-child(3) {
+    position: relative;
+    top: 5px;
+}
+#summary div:nth-child(1) {background:url(../images/icons/summary-1.svg)}
+#summary div:nth-child(2) {background:url(../images/icons/summary-2.svg)}
+#summary div:nth-child(3) {background:url(../images/icons/summary-3.svg)}
+#summary div:nth-child(4) {background:url(../images/icons/summary-4.svg)}
+#summary div:nth-child(1),
+#summary div:nth-child(2),
+#summary div:nth-child(3),
+#summary div:nth-child(4){
+    background-size: contain;
+    // background-size: 5.8125rem 4.5rem;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+#summary div > p {font-size: .875rem}
+#summary div > p > span {font-size: 2.25rem}
+
+// @media screen and (min-width:24.9375em) {
+    #goals div {height:4rem}
+    #goals div:nth-child(1) {background-size:2.25rem 4rem}
+    #goals div:nth-child(2) {background-size:3.0625rem 4rem}
+    #goals div:nth-child(3) {background-size:5.8125rem 3.375rem;}
+// }
+@media screen and (min-width:30em) {
+    #overview h1 {margin-top:5.875rem}
+    #goals div > p {font-size:1rem}
+
+    #summary div {
+        height:5.125rem;
+        width:50%
+    }
+    #summary div:nth-child(1),
+    #summary div:nth-child(2) {margin-bottom:1.5rem}
+    #summary div:nth-child(1),
+    #summary div:nth-child(2),
+    #summary div:nth-child(3),
+    #summary div:nth-child(4){background-size: 6.625rem 5.125}
+    #summary div > p {font-size:1rem}
+    #summary div > p > span {font-size:2.5625}
+}
+@media screen and (min-width:33.875em) {
+    #goals div > p {font-size:1.25rem;}
+}
+@media screen and (min-width:36em) {
+    #goals div {height:5.8125rem}
+    #goals div:nth-child(1) {background-size:3.25rem 5.8125rem}
+    #goals div:nth-child(2) {background-size:4.4375rem 5.8125rem}
+    #goals div:nth-child(3) {background-size:8.5rem 4.875rem}
+}
+@media screen and (min-width:37em) {
+    #summary {max-width:33rem}
+    #summary div {width:6.625rem}
+}
+@media screen and (min-width:47em) {
+    #summary {
+        padding: 0;
+        margin-top:4.8125rem;
+        max-width:42.4375rem
+    }
+    #summary div {
+        height:7.4375rem;
+        width:9.6875rem
+    }
+    #summary div:nth-child(1),
+    #summary div:nth-child(2) {margin-bottom:0}
+    #summary div:nth-child(1),
+    #summary div:nth-child(2),
+    #summary div:nth-child(3),
+    #summary div:nth-child(4){background-size:9.6875rem 7.4375rem}
+    #summary div > p {font-size: 1.25rem}
+    #summary div > p > span {font-size: 3rem}
+}
+@media screen and (min-width:51.25em) {
+    #goals {margin-top:3.25rem}
+    #goals div {
+        height:9.75rem;
+        width:15.75rem;
+    }
+    #goals div:nth-child(1) {background-size:5.0625rem 9.0625rem}
+    #goals div:nth-child(2) {background-size:6.9375rem 9.0625rem}
+    #goals div:nth-child(3) {background-size:13.25rem 7.625rem}
+    #goals div > p {font-size: 1.5rem}
+}
+@media screen and (min-width:67.625em) {
+    #summary{max-width:57rem}
+    #summary div {
+        height:9.25rem;
+        width:12rem
+    }
+    #summary div:nth-child(1),
+    #summary div:nth-child(2),
+    #summary div:nth-child(3),
+    #summary div:nth-child(4){background-size:12rem 9.25rem}
+    #summary div > p {font-size: 1.5rem}
+    #summary div > p > span {font-size: 4rem}
+}
+/* -------------------------------------------- END OVERVIEW -------------------------------------------- */
+
+
+
+
+
+
+
+
+/* ----------------------------------------------- MEDIA ------------------------------------------------ */
+#video-gallery .popup-youtube {
+    position: relative;
+    backface-visibility:hidden;
+    display: block;
+    display: -moz-inline-box;
+
+    &:before {
+        content:'';
+        position: absolute;
+        left:0px;
+        top:0px;
+        z-index: 20;
+        height: 100%;
+        width: 100%;
+        background: rgba(#000, .3);
+        border-radius:6px;
+        transition: opacity 100ms ease-in-out;
+        opacity: 0;
+        will-change: opacity;
+        backface-visibility:hidden;
+    }
+    &:after {
+        content:'';
+        position: absolute;
+        z-index: 30;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        background: url('../images/media-glyph-1_button-circle-play.svg') no-repeat;
+        background-size: cover;
+        height:44px;
+        width:32px;
+        transition: opacity 100ms ease-in-out;
+        opacity: 0;
+        will-change: opacity;
+        backface-visibility:hidden;
+    }
+    // Hover
+    &:hover {
+        border-color: transparent;
+        &:after,
+        &:before {opacity: 1;}
+    }
+}
+#gallery-buttons {
+    margin-bottom:.25rem;
+    margin-top:2.75rem;
+    width:100%
+}
+#gallery-buttons button {
+    height:2.5rem;
+    margin-bottom:2.94%;
+    padding-top:.3125rem;
+    width:100%
+}
+#image-gallery-button, #video-gallery-button {
+    background-color:#fef8ef;
+    border-color:$default;
+    color:$default;
+}
+#image-gallery-button:hover, #video-gallery-button:hover {
+    background-color:$hover;
+    border-color:$hover;
+    color:#fef8ef;
+}
+#image-gallery-button:active, #video-gallery-button:active,
+#image-gallery-button.show, #video-gallery-button.show {
+    background-color:$active;
+    border-color:$active;
+    color:#fef8ef;
+}
+#image-gallery-button.show, #video-gallery-button.show {
+    pointer-events: none;
+}
+#image-gallery, #video-gallery {
+    display:none;
+    .item {
+        display: block;
+        float: left;
+        width: 25%;
+        padding: 10px;
+
+    }
+}
+
+#image-gallery.show, #video-gallery.show {
+//     display:-webkit-box;
+//     display:-ms-flexbox;
+//     display:flex
+        display: block;
+}
+
+#media .gallery-item,
+#media .popup-youtube {
+    margin-bottom:0;
+    position: relative;
+    margin-bottom:0px;
+    padding-bottom: 100%;
+    // width:48.53%;
+
+    // height:48.53%;
+    // height: 200px;
+    width: 100%;
+    // border: 3px solid transparent;
+    // border-radius:6px;
+    transition: all 100ms ease-in-out;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        position: absolute;
+        border: 3px solid transparent;
+        border-radius: 8px;
+        transition: all 100ms ease-in-out;
+    }
+
+    &:hover img {
+        border-color: $hover;
+    }
+}
+
+
+// #media a:nth-child(7),
+// #media a:nth-child(8) {margin-bottom:0}
+
+@media screen and (min-width:30em) {
+    #gallery-buttons {margin-top:5.125rem}
+    #gallery-buttons button {
+        height:2.5rem;
+        margin-bottom:2.94%;
+        padding-top:.375rem;
+        width:48.53%
+    }
+    
+
+    // #media a:nth-child(1) {margin-bottom:2.94%}
+}
+@media screen and (min-width:60em) {
+    #gallery-buttons {
+        margin-bottom:3.125rem;
+        width:47.25rem
+    }
+    #gallery-buttons button {
+        height:3.125rem;
+        margin-bottom:0;
+        width:22.6875rem
+    }
+}
+@supports (-moz-appearance:none) and (display:contents) {
+    #gallery-buttons button {
+        margin-bottom:.625rem;
+        padding-top:.0625rem
+    }
+    // #media a {
+    //     margin-bottom:0;
+    //     // width:50%;
+    //     // padding-bottom:.625rem
+    // }
+    #media a:nth-child(1),
+    #media a:nth-child(3),
+    #media a:nth-child(5),
+    #media a:nth-child(7) {padding-right:.3125rem}
+    #media a:nth-child(2),
+    #media a:nth-child(4),
+    #media a:nth-child(6),
+    #media a:nth-child(8) {
+        padding-left:.3125rem}
+
+    @media screen and (min-width:30em) {
+        #gallery-buttons button {margin-bottom:1.25rem}
+        // #media a {
+        //     padding-bottom:1.25rem;
+        //     width:25%;
+        //     height:25%;
+        // }
+        #media a:nth-child(1),
+        #media a:nth-child(2),
+        #media a:nth-child(3),
+        #media a:nth-child(4),
+        #media a:nth-child(5),
+        #media a:nth-child(6),
+        #media a:nth-child(7),
+        #media a:nth-child(8) {
+            padding-left:.625rem;
+            padding-right:.625rem;
+        }
+    }
+    @media screen and (min-width:60em) {
+        #gallery-buttons button {margin-bottom:0}
+        #media a {padding-bottom:1.875rem}
+        #media a:nth-child(1),
+        #media a:nth-child(2),
+        #media a:nth-child(3),
+        #media a:nth-child(4),
+        #media a:nth-child(5),
+        #media a:nth-child(6),
+        #media a:nth-child(7),
+        #media a:nth-child(8) {
+            padding-left:.9375rem;
+            padding-right:.9375rem;
+        }
+    }
+}
+/* --------------------------------------------- END MEDIA ---------------------------------------------- */
+
+
+
+
+
+
+
+
+/* ------------------------------------------ PAGE DIVIDER ONE ------------------------------------------ */
+#divider-one{
+    margin-top:4.625rem;
+max-width: 1280px;
+width: 100%;}
+#divider-one-left,
+#divider-one-right {margin-top:.0625rem;
+    width:38%;
+}
+#middle {
+    min-width:9rem;
+    width:9rem;
+    margin-left:.8125rem;
+    margin-right:.8125rem
+}
+@media screen and (min-width:30em) {
+    #divider-one{margin-top:6.9375rem}
+    #middle {
+        min-width:14.5625rem;
+        width:14.5625rem;
+        margin-left:1.625rem;
+        margin-right:1.625rem;
+    }
+}
+/* ---------------------------------------- END PAGE DIVIDER ONE ---------------------------------------- */
+
+
+
+
+
+
+
+
+/* -------------------------------------------- LIVE PREMIERE ------------------------------------------- */
+#live-premiere-wrap {
+    background:url('../images/live-premiere-background.png');
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-size:46.875rem 22.375rem;
+
+    margin-top:-14.6875rem;
+    padding-top:14.6875rem;
+}
+#live-premiere h1 {margin-top:4.125rem}
+#live-premiere h2 {margin-top:2.25rem}
+#winners {margin-top:1.8125rem}
+#winners {
+    a {
+        width: 50%;
+        float: left;
+    }
+    img {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+#winners img:nth-child(1) {margin-bottom:2.0625rem}
+@media screen and (min-width:30em) {
+    #live-premiere-wrap {
+        background-size:56.25rem 26.8125rem;
+        margin-top:-15rem;
+        padding-top:15rem
+    }
+
+    #live-premiere h1 {margin-top:6.25rem}
+    #winners {margin-top:2.6875rem}
+}
+@media screen and (min-width:44em) {
+    #winners img {width:48%}
+    #winners img:nth-child(1) {margin-bottom:0}
+}
+@media screen and (min-width:60em) {
+    #live-premiere-wrap {
+        background-size:75rem 35.8125rem;
+        margin-top:-23.5rem;
+        padding-top:23.5rem
+    }
+}
+@media screen and (min-width:68em) {
+    #winners img {width:30.875rem}
+}
+@media screen and (min-width:80em) {
+    #live-premiere-wrap {
+        background-size:101rem 48.1875rem;
+        margin-top:-29.75rem;
+        padding-top:29.75rem
+    }
+}
+/* ------------------------------------------ END LIVE PREMIERE ----------------------------------------- */
+
+
+
+
+
+
+
+
+/* ------------------------------------------ PAGE DIVIDER TWO ------------------------------------------ */
+#divider-two {margin-top:3.875rem}
+#divider-two-left,
+#divider-two-right {margin-top:.75rem}
+#punch {
+    min-width:6rem;
+    width:6rem
+}
+#punch img {
+    height:1.625rem;
+    width:1.25rem
+}
+@media screen and (min-width:30em) {
+    #divider-two {margin-top:5.9375rem}
+    #divider-two-left,
+    #divider-two-right {margin-top:1.125rem}
+    #punch {
+        min-width:10.75rem;
+        width:10.75rem
+    }
+    #punch img {
+        height:2.4375rem;
+        width:1.875rem
+    }
+}
+/* ---------------------------------------- END PAGE DIVIDER ONE ---------------------------------------- */
+
+
+
+
+
+
+
+
+/* ----------------------------------------------- SUPPORT ---------------------------------------------- */
+#support-wrapper{
+    background: url('../images/bottom-background.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size:46.875rem 30.6875rem
+}
+#beta h1 {
+    letter-spacing:.01em;
+    line-height: 96%;
+    margin-top:3rem;
+    max-width:38.125rem
+}
+#beta h2 {margin-top:1.5rem}
+#beta p:nth-child(3) {
+    margin-top:0.375rem;
+    max-width:21.875rem;
+}
+
+#beta form {max-width:19.25rem; width: 100%;}
+#email {
+    border-bottom:.1875rem solid $default;
+    font-size:1.125rem;
+    height:2.8125rem;
+    margin-top:2.125rem;
+}
+#email::placeholder {color:#777}
+form .btn{
+    margin-top: 8px;
+    padding: 8px 0;
+}
+#submit:hover {
+    border-color:$hover;
+    background:$hover;
+}
+#submit:active {
+    border-color:$active;
+    background:$active;
+}
+#code{margin-top:1rem}
+
+#availability {
+    line-height: 1.25;
+    margin-top:1.5625rem;
+    width:13.625rem;
+}
+#availability img{height:2.875rem;width:2.875rem}
+#papaya {
+    height:3.125rem;
+    margin-bottom:1.3125rem;
+    margin-top:0.625rem;
+    width:2.25rem;
+}
+@media screen and (min-width:30em) {
+    #beta h1 {margin-top:5rem}
+    #beta h2 {margin-top:2.3125rem}
+}
+@media screen and (min-width:60em) {
+    #support-wrapper{background-size:56.25rem 36.8125rem}
+}
+@media screen and (min-width:80em) {
+    #support-wrapper {
+        background-size:68.75rem 45rem;
+        margin-top:-15.0625rem;
+        padding-top:15.0625rem;
+    }
+}
+@media screen and (min-width:90em) {
+    #support-wrapper {
+        background-size:96.875rem 63.4375rem;
+        margin-top:-21.25rem;
+        padding-top:21.25rem;
+    }
+}
+/* --------------------------------------------- END SUPPORT -------------------------------------------- */
+
+
+
+
+
+
+
+
+/* ----------------------------------------------- FOOTER ----------------------------------------------- */
+footer {padding-top:2rem}
+#footer-wrapper > div:nth-child(1) {
+    margin-bottom:2rem;
+    padding-bottom:2rem;
+}
+#sos-logo {
+    height:3.625rem;
+    width:3.4375rem
+}
+#site-footer .justify-btween {
+    position: relative;
+
+}
+#outpost-logo {
+    height:3.625rem;
+    width:2.6875rem;
+    position: absolute;
+    right:0;
+}
+#social {
+    margin-bottom:4rem;
+    width:9.5625rem
+}
+#site-footer #social a { margin: 0 8px;}
+#social a,
+#social a > svg {height: 1.1875rem}
+
+#social a:nth-child(1),
+#social a:nth-child(1) > svg {width:.5625rem}
+
+#social a:nth-child(2),
+#social a:nth-child(3),
+#social a:nth-child(2) > svg,
+#social a:nth-child(3) > svg {width:1rem}
+
+#social a:nth-child(4),
+#social a:nth-child(5),
+#social a:nth-child(4) > svg,
+#social a:nth-child(5) > svg {width:1.125rem}
+
+#footer-nav > div > a:nth-child(3) {padding-bottom:1rem}
+
+#footer-nav {
+    .flex-column {
+
+        a {
+            display: block;
+            
+        }
+    }
+}
+
+#copyright {margin-bottom:1.5rem;margin-top:4rem}
+
+@media screen and (min-width:23.4375em) {
+    #sos-logo {
+        height:2.75rem;
+        width:2.625
+    }
+    #outpost-logo {
+        height:2.75rem;
+        width:2.0625rem
+    }
+    #social{margin-bottom:12.1875rem}
+    #copyright{margin-top:0}
+}
+@media screen and (min-width:30em) {
+    #sos-logo {
+        height:3.625rem;
+        width:3.4375rem
+    }
+    #outpost-logo {
+        height:3.625rem;
+        width:2.6875rem
+    }
+    #social{margin-bottom:12.625rem}
+}
+@media screen and (min-width:35em) {
+    #footer-wrapper {padding-bottom:2rem}
+    #social{margin-bottom:11.4375rem}
+    #footer-nav {width:auto}
+    #footer-nav div:nth-child(1){margin-right:2.625rem}
+    #footer-nav > div > a:nth-child(3) {padding-bottom:0}
+    #copyright{
+        margin-bottom:0;
+        width:auto;text-align:left}
+}
+@media screen and (min-width:37.5em) {
+    #social {width:12.75rem}
+    #social a {height:1.375rem; display: inline-block;}
+    #social a:nth-child(1) {width:.625rem}
+    #social a:nth-child(2),
+    #social a:nth-child(3) {width:1.1875rem}
+    #social a:nth-child(4),
+    #social a:nth-child(5) {width:1.3125rem}
+}
+@media screen and (min-width:70em) {
+    footer {padding-top:3.5625rem}
+    #footer-wrapper {padding-bottom:5rem}
+    #footer-wrapper > div:nth-child(1) {
+        margin-bottom:4.1875rem;
+        padding-bottom:3.5rem;
+    }
+    #sos-logo {
+        height:5.4375rem;
+        width:5.1875rem
+    }
+    #outpost-logo {
+        height:5.4375rem;
+        width:4.0625rem
+    }
+    #social {margin-bottom:18.125rem}
+    #footer-nav > div > a:nth-child(3) {padding-bottom:.3rem}
+}
+
+/* IE10 Social Icon Fixes */
+@media screen and (min-width:0\0) {
+    #social {width:12.75rem\9;}
+    #social a {height: 1.375rem\9;}
+    #social a:nth-child(1) {width:0.625rem\9;}
+    #social a:nth-child(2),
+    #social a:nth-child(3) {width:1.1875rem\9;}
+    #social a:nth-child(4),
+    #social a:nth-child(5) {width:1.3125rem\9;}
+
+    #social a {margin-right:1.78125rem\9;}
+    #social a:nth-child(5){margin-right:0\9;}
+}
+/* IE10 Social Icon Fixes */
+/* --------------------------------------------- END FOOTER --------------------------------------------- */
+
+@media screen and (max-width:40em) {
+    #image-gallery, #video-gallery {
+        .item {
+            width: 50%;
+
+        }
+    }
+    #winners {
+        a {
+            width: 100%;
+            float: none;
+        }
+    }
+
+    .g-recaptcha {
+        > div {margin: 0 -6px !important}
+    }
+    // #beta form {min-width: auto;}
+
+}

@@ -1,0 +1,132 @@
+/*SOS Parallax Scenes*/
+
+
+/* --------------------------- Scenes Container ---------------------------- */
+.site-header-layout {
+    background: #292215;
+}
+.site-header-layout.initH {opacity: 1 !important;}
+.scene-container {
+    opacity: 0; 
+}
+.scene-container.active {
+    opacity: 1;
+}
+.site-header-layout {
+    position: relative;
+    padding-bottom: 150%;
+    // height: 1860px;
+    overflow: hidden;
+    // margin-bottom: -280px;
+}
+/*Layers*/
+.scene-layer {
+    position: absolute;
+
+    background-repeat:no-repeat !important;
+    background-position:center top !important;
+    // background-position:center bottom !important;
+    background-size:100% !important;
+    // height: 2155px;
+    padding-bottom: 160%;
+    width: 100%;
+    will-change:transform;
+}
+.site-header_scenes-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    // background: #461e1a;
+    background: #000;
+}
+
+
+// @media only screen and (min-width:1348px) {
+//     .site-header-layout {
+//         padding-bottom: 140%;
+//     }
+//     .scene-layer {
+//         padding-bottom: 160%;
+//     }
+// }
+
+// @media only screen and (min-width:1600px) {
+//     .site-header-layout {
+//         // height: 2022px;
+//         height: 2400px;
+//         padding-bottom: 0;
+//     }
+//     .site-header_scenes-container {
+//         // max-width: 1396px;   
+//         max-width: 1600px;   
+//         left: 50%;
+//         transform: translate(-50%,0);
+//     }
+// }
+
+.site-header-layout_scene {
+    height: 100%;
+    width: 100%;
+}
+// #scene-1 {opacity: 0 !important;}
+// #scene-2 {opacity: 1 !important;}
+#scene-2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#scene-2 img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+    }
+
+main {position: relative;z-index: 10;}
+
+
+/*Stack Order*/
+.scene-layer--1 {z-index: 5;}
+.scene-layer--2 {z-index: 4;}
+.scene-layer--3 {z-index: 3;}
+.scene-layer--4 {z-index: 2;}
+.scene-layer--5 {z-index: 1; background-size:100% !important;}
+
+
+
+/* ---------------------------------- CTA ---------------------------------- */
+#header-cta {
+    width: 100%;
+    max-width:15.5rem;
+    position: absolute;
+    z-index: 20;
+    top: 25.25rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    will-change:top;
+
+}
+#header-cta img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    
+    max-width:12.5rem;
+}
+
+
+
+
+/*Small*/
+@media only screen and (max-width: 767px) {
+    #scene-2 {position: static;}
+
+    .site-header-layout {height: auto;margin-bottom: 0;padding-bottom: 0;}
+
+    #header-cta {
+        max-width: 60%;
+        top: 36% !important;
+    }
+
+}

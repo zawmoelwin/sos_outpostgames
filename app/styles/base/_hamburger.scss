@@ -1,0 +1,71 @@
+@media screen and (max-width:70em) {
+    #menu-button {
+    transition: background 375ms ease-in-out;
+    user-select: none;
+    width:20px;
+    margin-top:20px;
+}
+
+.hamburger {
+    position: relative;
+    width: 25px;
+    height: 20px;
+    transition: transform 375ms ease-in-out;
+}
+
+#menu-button:active .hamburger {
+    transition: transform 50ms;
+    transform: scale(.95);
+}
+
+.hamburger::before, .hamburger::after, .hamburger .inner {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: #c64c34;
+    transform-origin: 100% 50%;
+    transition: all 375ms ease-in-out;
+    backface-visibility: hidden;
+}
+.hamburger::before {
+    top: -1px;
+}
+.hamburger .inner {
+    top: 9px;
+    transform-origin: 50% 50%;
+}
+.hamburger::after {
+    top: 19px;
+}
+.menu-open .hamburger {
+    transform: rotateY(-180deg);
+}
+.menu-open #menu-button:active .hamburger {
+    transform: scale(.95) rotateY(-180deg);
+}
+.menu-open .hamburger::before {
+    transform: translate3d(-4px, 1px, 0) rotateZ(-45deg);
+}
+.menu-open .hamburger .inner {
+    transform: rotateY(-90deg);
+    transition: transform 375ms;
+}
+.menu-open .hamburger::after {
+    transform: translate3d(-4px, -1px, 0) rotateZ(45deg);
+}
+
+.nav {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.nav.is-hidden {
+    transition: transform 375ms;
+}
+.nav.is-visible {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition: transform 375ms;
+    backface-visibility: hidden;
+}
+}
