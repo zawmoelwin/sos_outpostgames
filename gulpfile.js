@@ -7,6 +7,9 @@ const wiredep = require('wiredep').stream;
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
+const gulpEjs = require('gulp-ejs-template');
+const ejs = require('gulp-ejs')
+const gutil = require('gulp-util')
 
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
@@ -97,6 +100,12 @@ gulp.task('extras', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
+gulp.task('ejs', function(){
+  return gulp.src('app/templates/*.ejs')
+   .pipe(ejs({}, {}, {ext:'.html'}))
+   .pipe(gulp.dest('app/'))
+});
+
 gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
   browserSync({
     notify: false,
@@ -116,10 +125,12 @@ gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
   ]).on('change', reload);
 
   gulp.watch('app/styles/**/*.scss', ['styles']);
+  gulp.watch('app/templates/*.ejs', ['ejs']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
 });
+
 
 gulp.task('serve:dist', () => {
   browserSync({
