@@ -22,6 +22,8 @@ document.querySelector('#menu-button').addEventListener('click', function() {
 (function() {
 
     function transformStart() {
+        document.querySelector('.special-nav-1').classList.toggle('special-nav');
+        document.querySelector('.special-nav-2').classList.toggle('special-nav');
         document.querySelector('.nav').classList.toggle('is-visible');
         document.querySelector('body').classList.toggle('overflow-hidden');
     }

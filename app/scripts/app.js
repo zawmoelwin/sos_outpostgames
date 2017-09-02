@@ -15,15 +15,20 @@
 
 /* Toggle menu button transform */
 document.querySelector('#menu-button').addEventListener('click', function() {
-    this.classList.toggle('menu-open');
+
+  this.classList.toggle('menu-open');
+
 });
 
 /* Show/hide nav */
 (function() {
 
     function transformStart() {
+        document.querySelector('.special-nav-1').classList.toggle('special-nav');
+        document.querySelector('.special-nav-2').classList.toggle('special-nav');
         document.querySelector('.nav').classList.toggle('is-visible');
         document.querySelector('body').classList.toggle('overflow-hidden');
+        document.querySelector('#navbar-wrap').classList.toggle('overflow-hidden');
     }
 
     document.querySelector('.hamburger').addEventListener('click', transformStart);
