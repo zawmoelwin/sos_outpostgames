@@ -1,7 +1,9 @@
 {
   "name": "new-sos-frontend",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.7"
+  },
   "devDependencies": {
     "chai": "^4.1.0",
     "mocha": "^3.4.2"
