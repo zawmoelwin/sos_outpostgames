@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <title>SOS - Outpost Games</title>
 
-    <style>.special-nav{visibility: hidden !important}body{overflow:hidden}#loading{background:#fff;height:100%;width:100%;position:fixed;top:0;left:0;z-index:200}.tr-op{transition:opacity .3s ease-in-out!important}#loading svg{fill:#c64c34;height:91px;width:87px;position:absolute;top:50%;left:50%;z-index:2;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.animated.slow{-webkit-animation-duration:2s;animation-duration:2s}.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}@-webkit-keyframes a{0%{opacity:.5}50%{opacity:1}to{opacity:.5}}@keyframes a{0%{opacity:.5}50%{opacity:1}to{opacity:.5}}.fade-pulse{-webkit-animation-name:a;animation-name:a}.hide{display:none}.hidden,.initH{opacity:0}.delay-01{transition-delay:.1875s!important;transition-delay:375ms!important}.delay-02{transition-delay:.75s!important}#loading.done{opacity:0}</style>
+    <style>.special-nav{display: none; !important}body{overflow:hidden}#loading{background:#fff;height:100%;width:100%;position:fixed;top:0;left:0;z-index:200}.tr-op{transition:opacity .3s ease-in-out!important}#loading svg{fill:#c64c34;height:91px;width:87px;position:absolute;top:50%;left:50%;z-index:2;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.animated.slow{-webkit-animation-duration:2s;animation-duration:2s}.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}@-webkit-keyframes a{0%{opacity:.5}50%{opacity:1}to{opacity:.5}}@keyframes a{0%{opacity:.5}50%{opacity:1}to{opacity:.5}}.fade-pulse{-webkit-animation-name:a;animation-name:a}.hide{display:none}.hidden,.initH{opacity:0}.delay-01{transition-delay:.1875s!important;transition-delay:375ms!important}.delay-02{transition-delay:.75s!important}#loading.done{opacity:0}</style>
 
       <link rel="shortcut icon" href="/images/favicons/sosfavicon-16x16.png">
       <link rel="apple-touch-icon" href="/images/favicons/sosfavicon-16x16.png">
@@ -49,18 +49,24 @@
   <!-- Mobile Login Button -->
 
 
+  <!-- copy content -->
   <div class="bg-white dt center fixed vh-100 w-100 ph3 nav      db-xl h-100-xl mw-80-xl static-xl">
     <div class="dtc v-mid h-100   flex-xl items-center-xl justify-between-xl navbar-wrap">
       <!-- Page Nav -->
       <div class="mb4 pb4 tc   mb0-xl pb0-xl tl-xl navbar_links" data-gumshoe id="page-nav">
-        <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl   nav-link-one" data-scroll href="#main-site">Main Site</a>
-        <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl   nav-link-two" data-scroll href="#international">International</a>
-        <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl   nav-link-three" data-scroll href="#news">News</a>
-        <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu special-nav  special-nav-1 di-xl f5-xl fw8-xl mb0-xl   nav-link-four" data-scroll href="#nav-link-1">Nav 1</a>
-        <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu special-nav  special-nav-2 di-xl f5-xl fw8-xl mb0-xl   nav-link-five" data-scroll href="#nav-link-2">Nav 2</a>
+        <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl   nav-link-one" data-scroll href="#overview">Overview</a>
+        <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl   nav-link-two" data-scroll href="#media">Media</a>
+        <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl   nav-link-three" data-scroll href="#live-premiere">Live Premiere</a>
+        <a class="red db f4 fw7 hover-light-silver lh-solid link pointer tracked ttu       di-xl f5-xl fw8-xl          nav-link-four" target="_blank" href="https://feedback.sosgame.com/">Support</a>
+        <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu special-nav  special-nav-1 di-xl f5-xl fw8-xl mb0-xl   nav-link-four" data-scroll href="#overview">overview</a>
+        <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu special-nav  special-nav-1 di-xl f5-xl fw8-xl mb0-xl   nav-link-five" data-scroll href="#audition">audition</a>
+        <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu special-nav  special-nav-1 di-xl f5-xl fw8-xl mb0-xl   nav-link-six" data-scroll href="#participants">participants</a>
+        <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu special-nav  special-nav-1 di-xl f5-xl fw8-xl mb0-xl   nav-link-seven" data-scroll href="#faq">faq</a>
       </div>
+  <!-- copy content -->
 
-      <div c
+
+
       <!-- End Page Nav -->
 
       <div class="flex-xl flex-row-reverse-xl items-center-xl navbar_actions cf">
@@ -106,13 +112,17 @@
 
 </nav>
 
-    <!-- TODO add clear second nav bar for the overview, autition, participants, FAQ -->
+
     <div class='second-nav-wrapper nav'>
   <nav class='second-nav ph1-x1 flex-xl mw-80-xl'>
-    <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl">Overview</a>
-    <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl">Audition</a>
-    <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl">participant</a>
-    <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl">FAQ</a>
+    <a class="white db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl" href=
+    "#overview">Overview</a>
+    <a class="white db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl" href=
+    "#audition">Audition</a>
+    <a class="white db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl"href=
+    "#participants">participants</a>
+    <a class="white db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl"href=
+    "#faq">FAQ</a>
   </nav>
 </div>
 
@@ -143,13 +153,13 @@
       </div>
 
       <section id="scene-2" class="scene-container tr-op">
-        <img data-src="images/scenes/scene-2/scene-2_layer-1.jpg" class="lazy-mb">
+        <img data-src="images/scenes/scene-2/scene-2_layer-1-new.jpg" class="lazy-mb">
       </section>
 
       <!-- Sign Up Button-->
       <div class="center" id="header-cta">
         <img src="images/svg/_Invitational_logo.svg">
-        <a class="b--red ba bg-red br2 bw1 db fw8 no-underline tc tk-din-2014 tracked ttu w-100 white" data-scroll href="#beta">Sign Up for the Beta</a>
+
       </div>
 
     </header>
@@ -215,14 +225,14 @@
     <div>second seperator image here</div>
 
     <!-- TODO USER LIST -->
-    <h1>LIST OF USERS</h1>
+    <h1 id="participants">LIST OF USERS</h1>
 
 
     <!-- TODO add single row of seperator -->
     <div>chat seperator image here</div>
 
     <!-- TODO USER LIST -->
-    <h1>
+    <h1 id='faq'>
 <div>Five div of FAQ</div>
 <div>Five div of FAQ</div>
 <div>Five div of FAQ</div>

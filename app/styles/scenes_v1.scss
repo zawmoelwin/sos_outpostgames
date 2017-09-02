@@ -11,7 +11,7 @@
 }
 .site-header-layout {
     position: relative;
-    
+
     height: 2000px;
     overflow: hidden;
     margin-bottom: -280px;
@@ -99,7 +99,7 @@ main {position: relative;z-index: 10;}
     .site-header-layout {height: 1510px;}
 }
 @media only screen and (max-width: 1140px) {
-    
+
     .scene-layer--1,
     .scene-layer--2,
     .scene-layer--4,
@@ -117,11 +117,11 @@ main {position: relative;z-index: 10;}
 /*Small*/
 @media only screen and (max-width: 768px) {
     .site-header-layout {height: auto;margin-bottom: 0}
-    
+
     #scene-2 img {
         display: block;
         max-width: 100%;
-        margin: 0 auto;
+        margin: 3em 0 0  0;
         width: 100%;
     }
 

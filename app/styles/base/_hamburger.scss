@@ -58,7 +58,6 @@
 .nav {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
-    display: flex;
 }
 .nav.is-hidden {
     transition: transform 375ms;

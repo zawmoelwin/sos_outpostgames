@@ -45,6 +45,7 @@ a, button, input[type="submit"] {transition:color 100ms ease-in-out, border 100m
 /* COLORS */
 .dark-red {color:#6c302a}
 .red { color:$default }
+.white {color:#fff}
 .gold {color:#ffa200}
 
 .b--red{border-color:$default}
@@ -112,6 +113,7 @@ a, button, input[type="submit"] {transition:color 100ms ease-in-out, border 100m
     .ph1-xl{padding-left:.25rem;padding-right:.25rem}
     .static-xl {position:static}
     .tl-xl {text-align: left}
+    .special-nav{display: none;}
 }
 
 
@@ -1028,6 +1030,7 @@ footer {padding-top:2rem}
     }
     #social {margin-bottom:18.125rem}
     #footer-nav > div > a:nth-child(3) {padding-bottom:.3rem}
+
 }
 
 /* IE10 Social Icon Fixes */
