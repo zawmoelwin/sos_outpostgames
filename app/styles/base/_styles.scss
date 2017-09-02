@@ -60,19 +60,22 @@ a, button, input[type="submit"] {transition:color 100ms ease-in-out, border 100m
 .hover-bg-light-silver:active {
     background: $active;
     border-color: $active;
-    color:#fff;    
+    color:#fff;
 }
 /* COLORS */
 
-
+/*font sizes*/
 .f-10{font-size:.625rem}
 .f-13{font-size:.8125rem}
 .f-30{font-size:1.875rem}
 .f-32{font-size:2rem}
 .f-50{font-size:3.125rem}
+
+/*height*/
 .h-2{height:0.125rem}
 .h-4{height:.25rem}
 .lh-copy{line-height: 1.66}
+/*maximum width*/
 .mw-50{max-width:50rem}
 .mw-63{max-width:63.625rem}
 .mw-67{max-width:67.625rem}
@@ -129,7 +132,7 @@ nav {height:3.75rem}
 #social-links {
     top: -1px;
     text-align: center;
-    
+
     // width:9.56rem;
     position: relative;
     z-index: 10;
@@ -176,7 +179,7 @@ nav {height:3.75rem}
 #account-buttons {
     width:15.16rem;
     display: block;
-    
+
 }
 #account-buttons a {
     // flex: 1 0 auto;
@@ -225,8 +228,8 @@ nav {height:3.75rem}
         margin: 0 auto;
         float: none;
         text-align: center;
-        
-        
+
+
         a {
             float: none;
             display: inline-block;
@@ -616,7 +619,7 @@ main {
         padding-top:.375rem;
         width:48.53%
     }
-    
+
 
     // #media a:nth-child(1) {margin-bottom:2.94%}
 }
@@ -959,7 +962,7 @@ footer {padding-top:2rem}
 
         a {
             display: block;
-            
+
         }
     }
 }
@@ -1063,3 +1066,28 @@ footer {padding-top:2rem}
     // #beta form {min-width: auto;}
 
 }
+
+
+/* --------------------------------------------- Second Nav --------------------------------------------- */
+// Add new CSS for the second menu bar
+.second-nav-wrapper{
+  position: relative;
+  padding: .5em;
+  padding-inline-start: 1em;
+
+}
+
+.second-nav{
+  position: absolute;
+  height: 20px;
+  margin-top: 60px;
+  display: flex;
+  background-color: transparent;
+  z-index: 6;
+  a {
+    margin-right: 1em;
+  }
+}
+
+
+/* --------------------------------------------- End second nav --------------------------------------------- */
