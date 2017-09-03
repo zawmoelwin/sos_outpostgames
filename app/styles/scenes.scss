@@ -97,22 +97,22 @@ main {position: relative;z-index: 10;}
 
 /* ---------------------------------- CTA ---------------------------------- */
 #header-cta {
-    width: 100%;
-    max-width:15.5rem;
-    position: absolute;
-    z-index: 20;
-    top: 22.25rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    will-change:top;
+  width: 100%;
+  max-width:15.5rem;
+  position: absolute;
+  z-index: 20;
+  top: 25.25rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  will-change:top;
 
 }
 #header-cta img {
-    margin: 0 auto;
-    display: block;
-    width: 100%;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
 
-    max-width:12.5rem;
+  max-width:12.5rem;
 }
 
 
@@ -125,7 +125,7 @@ main {position: relative;z-index: 10;}
     .site-header-layout {height: auto;margin-bottom: 0;padding-bottom: 0;}
 
     #header-cta {
-        max-width: 60%;
+        img {max-width: 100%;}
         top: 16% !important;
     }
 
