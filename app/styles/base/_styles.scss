@@ -330,9 +330,6 @@ main {
 
 
 
-
-
-
 /* ---------------------------------------------- OVERVIEW ---------------------------------------------- */
 #overview h1 {
     line-height: 96%;
@@ -370,6 +367,29 @@ main {
 #embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
 #embed-container iframe, #embed-container object, #embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 /* End Video Embed */
+
+/*----------------------------------start of four boxes-------------------------------------------*/
+
+#four-boxes {
+  padding: 2 2.5rem;
+  margin-top:2rem;
+
+  div{height:9.25rem;width:9rem;}
+}
+
+
+#four-boxes div:nth-child(1) {background:url("../images/svg/proven_performers.svg")}
+#four-boxes div:nth-child(2) {background:url("../images/svg/100_rising_stars_icon.svg")}
+#four-boxes div:nth-child(3) {background:url("../images/svg/2 winners.svg")}
+#four-boxes div:nth-child(4) {background:url("../images/svg/Hell_of_show_icon.svg")}
+#four-boxes div:nth-child(n){
+    background-size: contain;
+    // background-size: 8rem 8rem;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/*----------------------------------------start of four boxes-----------------------------------------*/
 
 #summary {
     margin-top:3rem;
@@ -423,6 +443,19 @@ main {
     #summary div:nth-child(4){background-size: 6.625rem 5.125}
     #summary div > p {font-size:1rem}
     #summary div > p > span {font-size:2.5625}
+
+    #four-boxes {
+      padding: 0;
+      margin-top:4.8125rem;
+      max-width:42.4375rem
+    }
+    #four-boxes div {
+      height:5.125rem;
+      width:50%
+    }
+    #four-boxes div:nth-child(n){background-size: 6.625rem 5.125}
+    #four-boxes div > p {font-size: 1rem}
+    #four-boxes div > p > span {font-size: 2.5625}
 }
 @media screen and (min-width:33.875em) {
     #goals div > p {font-size:1.25rem;}
@@ -436,6 +469,8 @@ main {
 @media screen and (min-width:37em) {
     #summary {max-width:33rem}
     #summary div {width:6.625rem}
+    #four-boxes {max-width:33rem}
+    #four-boxes div {width:6.625rem}
 }
 @media screen and (min-width:47em) {
     #summary {
@@ -455,6 +490,20 @@ main {
     #summary div:nth-child(4){background-size:9.6875rem 7.4375rem}
     #summary div > p {font-size: 1.25rem}
     #summary div > p > span {font-size: 3rem}
+
+    #four-boxes {
+      padding: 0;
+      margin-top:4.8125rem;
+      max-width:42.4375rem
+    }
+    #four-boxes div {
+        height:7.4375rem;
+        width:9.6875rem
+    }
+    #four-boxes div:nth-child(n){background-size:9.6875rem 7.4375rem}
+    #four-boxes div > p {font-size: 1.25rem}
+    #four-boxes div > p > span {font-size: 3rem}
+
 }
 @media screen and (min-width:51.25em) {
     #goals {margin-top:3.25rem}
@@ -479,6 +528,19 @@ main {
     #summary div:nth-child(4){background-size:12rem 9.25rem}
     #summary div > p {font-size: 1.5rem}
     #summary div > p > span {font-size: 4rem}
+
+
+    #four-boxes{max-width:57rem}
+    #four-boxes div {
+        height:9.25rem;
+        width:12rem
+    }
+    #four-boxes div:nth-child(1),
+    #four-boxes div:nth-child(2),
+    #four-boxes div:nth-child(3),
+    #four-boxes div:nth-child(4){background-size:12rem 9.25rem}
+    #four-boxes div > p {font-size: 1.5rem}
+    #four-boxes div > p > span {font-size: 4rem}
 }
 /* -------------------------------------------- END OVERVIEW -------------------------------------------- */
 
@@ -571,7 +633,7 @@ main {
         float: left;
         width: 25%;
         padding: 10px;
-
+        min-height: 100px;
     }
 }
 
