@@ -34,17 +34,311 @@
     <%- include partials/second_nav_header.ejs %>
 
     <!-- Parallax Hero -->
-    <header class=" tr-op initH delay-00">
-      <!-- TODO put second-nav wrapper to hide on small screen -->
-      <img src="images/scenes/scene-2/scene-2_layer-1-new.jpg" class="lazy-mb">
+    <header class="site-header-layout tr-op initH delay-00">
+      <div class="site-header_scenes-container">
+        <!-- // SCENE 1 // -->
+        <section id="scene-1" class="site-header-layout_scene scene-container tr-op">
 
+          <img class="lazy hide" data-src="images/scenes/scene-1/scene-1_layer-1-raw.png">
+          <div class="scene-1_layer-1 scene-layer scene-layer--1"></div>
 
-      <!-- Sign Up Button-->
-      <div class="center" id="header-cta" >
-        <img class='svg-main-icon center' src="images/svg/_Invitational_logo.svg" style="width:500px">
+          <img class="lazy hide" data-src="images/scenes/scene-1/scene-1_layer-2.png">
+          <div class="scene-1_layer-2 scene-layer scene-layer--2"></div>
+
+          <img class="lazy hide" data-src="images/scenes/scene-1/scene-1_layer-3.png">
+          <div class="scene-1_layer-3 scene-layer scene-layer--3"></div>
+
+          <img class="lazy hide" data-src="images/scenes/scene-1/scene-1_layer-4.png">
+          <div class="scene-1_layer-4 scene-layer scene-layer--4"></div>
+
+          <img class="lazy hide" data-src="images/scenes/scene-1/scene-1_layer-5.jpg">
+          <div class="scene-1_layer-5 scene-layer scene-layer--5"></div>
+        </section>
       </div>
 
+      <section id="scene-2" class="scene-container tr-op">
+        <img data-src="images/scenes/scene-2/scene-2_layer-1.jpg" class="lazy-mb">
+      </section>
+
+      <!-- Sign Up Button-->
+      <div class="center" id="header-cta">
+        <img src="images/logos/full_sos_logo_large.svg">
+        <a class="b--red ba bg-red br2 bw1 db fw8 no-underline tc tk-din-2014 tracked ttu w-100 white" data-scroll href="#beta">Sign Up for the Beta</a>
+      </div>
     </header>
+
+    <main class="initH tr-op delay-02 bg-washed-yellow">
+      <!-- OVERVIEW -->
+      <div class="ph3 ph4-ns" id="overview">
+        <h1 class="f-32 fw8 gold tc ttu f-50-ns">Welcome, Contestant</h1>
+
+
+        <div class="center flex flex-wrap justify-between mw-50" id="goals">
+          <div class="dt h-100">
+            <p class="dark-red dtc fw7 pv3 tc tracked-narrow ttu v-mid pb0-ns pt2-ns">Retrieve Relic</p>
+          </div>
+
+
+          <div class="dt h-100">
+            <p class="dark-red dtc fw7 pv3 tc tracked-narrow ttu v-mid pb0-ns pt2-ns">Signal for<br>
+            Extraction</p>
+          </div>
+
+
+          <div class="dt h-100">
+            <p class="dark-red dtc fw7 pv3 tc tracked-narrow ttu v-mid pb0-ns pt2-ns">Escape<br>
+            the Island</p>
+          </div>
+        </div>
+
+
+        <p class="center dark-red f5 lh-copy measure mt4 pt3 tc f-18-ns pt4-ns">The goal of SOS is simple: find a relic, signal for extraction, and escape on the helicopter. With sixteen Contestants and only three seats on the helicopter, you'll need to out-think, out-run, and out-fight your opponents.</p>
+
+
+        <p class="center dark-red f5 lh-copy measure tc f-18-ns">Use the power of your own voice and personality to create bonds with other Contestants and the audience. Statistics show Contestants that work together have a higher rate of survival than those who don't.</p>
+
+
+        <div class="center mt4 pt3 mw-63 mt5-ns pt4-ns" id="video-wrapper">
+          <div id="embed-container">
+            <iframe allowfullscreen class="z-0" frameborder='0' src='https://www.youtube.com/embed/46lp_xa7pos'></iframe>
+          </div>
+        </div>
+        <!-- Summary -->
+
+
+        <div class="center flex flex-wrap justify-between" id="summary">
+          <div class="dt h-100">
+            <p class="dark-red dtc fw7 pv3 tc tracked-narrow ttu v-mid pv0-ns"><span>1</span><br>
+            Island</p>
+          </div>
+
+
+          <div class="dt h-100">
+            <p class="dark-red dtc fw7 pv3 tc tracked-narrow ttu v-mid pv0-ns"><span>16</span><br>
+            Contestants</p>
+          </div>
+
+
+          <div class="dt h-100">
+            <p class="dark-red dtc fw7 pv3 tc tracked-narrow ttu v-mid pv0-ns"><span>30</span><br>
+            Minutes</p>
+          </div>
+
+
+          <div class="dt h-100">
+            <p class="dark-red dtc fw7 pv3 tc tracked-narrow ttu v-mid pv0-ns"><span>3</span><br>
+            Survivors</p>
+          </div>
+        </div>
+        <!-- Summary -->
+      </div>
+      <!-- END OVERVIEW -->
+
+
+      <!-- MEDIA -->
+      <div class="center ph3 mw-67 ph4-ns" id="media">
+        <div class="center flex flex-wrap justify-between" id="gallery-buttons">
+          <button class="b--red ba br2 bw1 f5 ff3 fw7 pointer tc tk-din-2014 tracked ttu f4-ns bw2-l show" id="image-gallery-button">Image Gallery</button> <button class="b--red ba br2 bw1 f5 ff3 fw7 pointer tc tk-din-2014 tracked ttu f4-ns bw2-l" id="video-gallery-button">Video Gallery</button>
+        </div>
+
+
+        <div class="cf show" id="image-gallery">
+
+          <div class="item">
+            <a class="dib gallery-item nt1" href="images/gallery/images/image1.jpg">
+            <img alt="image" class="br2 dib" src="images/gallery/images/small/image2.png"></a>
+          </div>
+
+          <div class="item">
+            <a class="dib gallery-item nt1" href="images/gallery/images/image2.jpg">
+            <img alt="image" class="br2 dib" src="images/gallery/images/small/image1.png"></a>
+          </div>
+
+          <div class="item">
+            <a class="dib gallery-item nt1" href="images/gallery/images/image3.jpg">
+            <img alt="image" class="br2 dib" src="images/gallery/images/small/image3.png"></a>
+          </div>
+
+          <div class="item">
+            <a class="dib gallery-item nt1" href="images/gallery/images/image4.jpg">
+            <img alt="image" class="br2 dib" src="images/gallery/images/small/image4.png"></a>
+          </div>
+
+          <div class="item">
+            <a class="dib gallery-item nt1" href="images/gallery/images/image5-new.jpg">
+            <img alt="image" class="br2 dib" src="images/gallery/images/small/image5.png"></a>
+          </div>
+
+          <div class="item">
+            <a class="dib gallery-item nt1" href="images/gallery/images/image7-gallery.jpg">
+            <img alt="image" class="br2 dib" src="images/gallery/images/small/image6.png"></a>
+          </div>
+
+          <!-- <div class="item">
+            <a class="dib gallery-item nt1" href="images/gallery/images/SOS_Concept_Relic_C-2.jpg">
+            <img alt="image" class="br2 dib" src="images/gallery/images/small/image7.png"></a>
+          </div>   -->
+          <div class="item">
+            <a class="dib gallery-item nt1" href="images/gallery/images/idk.jpg">
+            <img alt="image" class="br2 dib" src="images/gallery/images/small/idk-sm.jpg"></a>
+          </div>
+
+          <div class="item">
+            <a class="dib gallery-item nt1" href="images/gallery/images/SOS_Concept_Relic_B-2.jpg">
+            <img alt="image" class="br2 dib" src="images/gallery/images/small/image8.png"></a>
+          </div>
+        </div>
+
+
+        <div class="cf" id="video-gallery">
+          <div class="item">
+            <a class="dib popup-youtube nt1" href="https://www.youtube.com/watch?v=0yeHu-CE98s?autoplay=1&rel=0&ytp-pause-overlay=0" rel="youtube">
+            <img alt="image" class="br2 dib" src="images/videos/MorganFreeman232.jpg"></a>
+          </div>
+
+          <div class="item">
+            <a class="dib popup-youtube nt1" href="https://www.youtube.com/watch?v=DrP5zGUM5gM?autoplay=1&rel=0&ytp-pause-overlay=0" rel="youtube">
+            <img alt="image" class="br2 dib" src="images/videos/hybridpanda232.jpg"></a>
+          </div>
+
+          <div class="item">
+            <a class="dib popup-youtube nt1" href="https://www.youtube.com/watch?v=hWKPe2-xyoE?autoplay=1&rel=0&ytp-pause-overlay=0" rel="youtube">
+            <img alt="image" class="br2 dib" src="images/videos/Ohmwrecker232.jpg"></a>
+          </div>
+
+          <div class="item">
+            <a class="dib popup-youtube nt1" href="https://www.youtube.com/watch?v=fzax_5r7v9E?autoplay=1&rel=0&ytp-pause-overlay=0" rel="youtube">
+            <img alt="image" class="br2 dib" src="images/videos/H2ODelirious232.jpg"></a>
+          </div>
+
+          <div class="item">
+            <a class="dib popup-youtube nt1" href="https://www.youtube.com/watch?v=RJs0E4Qqq3M&t=2s?autoplay=1&rel=0&ytp-pause-overlay=0" rel="youtube">
+            <img alt="image" class="br2 dib" src="images/videos/Shadowfrax232.jpg"></a>
+          </div>
+
+          <div class="item">
+            <a class="dib popup-youtube nt1" href="https://www.youtube.com/watch?v=3fsdw30mQmE?autoplay=1&rel=0&ytp-pause-overlay=0" rel="youtube">
+            <img alt="image" class="br2 dib" src="images/videos/Sattelizer232.jpg"></a>
+          </div>
+
+          <div class="item">
+            <a class="dib popup-youtube nt1" href="https://www.youtube.com/watch?v=wDBnIw9Wc1g?autoplay=1&rel=0&ytp-pause-overlay=0" rel="youtube">
+            <img alt="image" class="br2 dib" src="images/videos/Vertiigo232.jpg"></a>
+          </div>
+
+          <div class="item">
+            <a class="dib popup-youtube nt1" href="https://www.youtube.com/watch?v=alQ9xYQ1MGg?autoplay=1&rel=0&ytp-pause-overlay=0" rel="youtube">
+            <img alt="image" class="br2 dib" src="images/videos/GameSociety232.jpg"></a>
+          </div>
+        </div>
+      </div>
+      <!-- END MEDIA -->
+
+
+      <!-- DIVIDER ONE -->
+      <div class="center flex justify-between mw-84 ph3 ph4-ns" id="divider-one">
+        <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-one-left">
+        </div>
+
+
+        <div class="flex justify-between" id="middle">
+          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+          </div>
+
+
+          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+          </div>
+
+
+          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+          </div>
+
+
+          <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
+          </div>
+
+
+          <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
+          </div>
+
+
+          <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
+          </div>
+
+
+          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+          </div>
+
+
+          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+          </div>
+
+
+          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+          </div>
+        </div>
+
+
+        <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-one-right">
+        </div>
+      </div>
+      <!-- END DIVIDER ONE -->
+
+
+      <!-- LIVE PREMIERE -->
+      <div id="live-premiere-wrap">
+        <div class="ph3 ph4-ns bg-grfeen o-f50" id="live-premiere">
+          <h1 class="f-32 fw8 gold tc ttu f-50-ns">Live Premiere</h1>
+
+
+          <p class="center dark-red f5 lh-copy measure mt3 tc f-18-ns mt4-ns">The SOS Alpha Live Premiere took place June 24th and 25th. 16 determined contestants entertained us in their fight for fame and fortune. In the end, two topped the leaderboards.</p>
+
+
+          <h2 class="f3 fw7 red tc ttu f-30-ns">Congratulations Winners</h2>
+
+
+          <div class="center mw-63 cf" id="winners">
+          <a href="https://www.twitch.tv/abittoolethal" target="_blank">
+            <img class="db self-start" src="images/survivor.jpg">
+          </a>
+          <a href="https://www.twitch.tv/lowco" target="_blank">
+            <img class="db self-start" src="images/performer.jpg">
+          </a>
+          </div>
+        </div>
+      </div>
+      <!-- END LIVE PREMIERE -->
+
+
+      <!-- DIVIDER TWO -->
+      <div class="center flex justify-between mw-84 ph3 ph4-ns" id="divider-two">
+        <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-two-left">
+        </div>
+
+
+        <div class="tc" id="punch"><img src="images/icons/punch.svg">
+        </div>
+
+
+        <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-two-right">
+        </div>
+      </div>
+      <!-- END DIVIDER TWO -->
+
+
+      <!-- Beta-->
+      <div id="support-wrapper">
+        <div class="bg-gfreen ph3 tc signup ph4-ns" id="beta">
+        <h1 class="center f-32 fw8 gold ttu f-50-ns">Accepting applications for our closed beta</h1>
+
+
+        <h2 class="f3 fw7 mb0 red ttu f-30-ns">Dates to be announced</h2>
+
+
+        <p class="center f5 lh-title red f5-ns">Follow SOS on Twitter and Facebook for updates</p>
+
+
+
     <!-- TODO put the ribbon image in the background  -->
     <div>JOIN US THE WEEKEND OF</div>
     <!-- TODO FORMAT THE DATE AND TIME -->
