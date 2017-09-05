@@ -48,6 +48,7 @@ a, button, input[type="submit"] {transition:color 100ms ease-in-out, border 100m
 .white {color:#fff}
 .gold {color:#ffa200}
 .yellow{color:goldenrod}
+.red-pink{color:#e23849;}
 
 .b--red{border-color:$default}
 
@@ -328,25 +329,30 @@ main {
 /* ----------------------------------------------- END MAIN ---------------------------------------------- */
 
 /* ---------------------------------------------- Record-view ---------------------------------------------- */
+#invitation {margin:5% auto; height:100%}
+#invitation-view div{margin-top:50rem;height:23.75rem;width:18rem;margin:auto;}
+#invitation-view div:nth-child(1) {background:url('../images/svg/_Invitational_logo.svg') no-repeat center center;}
+#invitation-view p {font-size:1.8rem;margin:10%;max-width:100rem;}
 
-#hero {margin-top:2rem; margin:auto;}
-#hero div:first-child {background:url('../images/svg/Autorgraph_hero.svg') no-repeat center;}
-#hero div:first-child{background-size:7rem 10rem}
+#hero {color:#e23849;margin:5% auto; width:100%}
+#hero-view div{margin-top:50rem;height:9.75rem;width:8rem;margin:auto;}
+#hero-view div:nth-child(1) {background:url('../images/svg/gray_entrance.svg') no-repeat center bottom;}
+#hero-view p {font-size: 1.5rem ;}
+.hero-header{display:block; position:relative;}
 
-
-#record-view div{margin-top:50rem;height:9.75rem;width:8rem;margin:auto;}
+#record-view div{height:9.75rem; width:9.5rem;margin:auto;}
 #record-view div:nth-child(1) {background:url('../images/svg/gray_entrance.svg') no-repeat center bottom;}
 #record-view div:nth-child(2) {background:url('../images/svg/gray_applause-1.svg') no-repeat center bottom;}
 #record-view div:nth-child(3) {background:url('../images/svg/gray_vote_icon.svg') no-repeat center bottom;}
-#record-view div > p {font-size: 1.5rem}
+#record-view div > p {font-size: 1.3rem; height:9.75rem; width:9.5rem;}
 #record-view div:nth-child(1) {background-size:auto 100%}
 #record-view div:nth-child(2) {background-size:auto 100%}
 #record-view div:nth-child(3) {background-size:auto 100%}
 
-#record-view div:nth-child(1) {background-size:7rem 10rem}
-#record-view div:nth-child(2) {background-size:6rem 10rem}
-#record-view div:nth-child(3) {background-size:6.5rem 10rem}
-#record-view div > p {font-size:1.0rem;span{font-size:0.8rem ;}}
+#record-view div:nth-child(1) {background-size:10rem 10rem}
+#record-view div:nth-child(2) {background-size:10rem 10rem}
+#record-view div:nth-child(3) {background-size:10rem 10rem}
+
 
 #record {margin:auto; width:100%}
 /* ---------------------------------------------- OVERVIEW ---------------------------------------------- */
@@ -457,7 +463,7 @@ main {
 @media screen and (min-width:30em) {
     #overview h1 {margin-top:5.875rem}
     #goals div > p {font-size:1rem}
-    #record-view div{margin-top:50rem;height:9.75rem;width:10rem;margin:auto;}
+    #record-view div{height:9.75rem;width:10rem;margin:auto;}
 
     #summary div {
         height:5.125rem;
@@ -485,11 +491,11 @@ main {
     #record-view div:nth-child(1) {background-size:10rem 10rem}
     #record-view div:nth-child(2) {background-size:10rem 10rem}
     #record-view div:nth-child(3) {background-size:10rem 10rem}
-    #record-view div > p {font-size:2rem;span{font-size:1.2rem ;}}
+    #record-view div > p {font-size:1.4rem}
     #goals div > p {font-size:1.25rem;}
 }
 @media screen and (min-width:36em) {
-    #record-view {height: 28rem;}
+
 
     #goals div {height:5.8125rem}
     #goals div:nth-child(1) {background-size:3.25rem 5.8125rem}
@@ -497,12 +503,30 @@ main {
     #goals div:nth-child(3) {background-size:8.5rem 4.875rem}#goals div > p {font-size:1.25rem;}
 }
 @media screen and (min-width:37em) {
+    #record-view div {
+      height:11rem;
+      width:12rem;
+
+  }
+  #record-view div > p {width:18rem;font-size:1.8rem;}
+    #record-view div:nth-child(1) {background-size:12rem 11rem}
+    #record-view div:nth-child(2) {background-size:12rem 11rem}
+    #record-view div:nth-child(3) {background-size:12rem 11rem}
+
     #summary {max-width:33rem}
     #summary div {width:6.625rem}
     #four-boxes {max-width:33rem}
     #four-boxes div {width:6.625rem; margin-top:2rem;}
+    #invitation-view p {font-size:2.0rem;margin:10%}
 }
 @media screen and (min-width:47em) {
+
+    #record-view div {
+        height:12rem;
+        width:12.75rem;
+
+    }
+    #record-view div > p {width:16rem;font-size:1.5rem;}
     #summary {
         padding: 0;
         margin-top:4.8125rem;
@@ -537,18 +561,20 @@ main {
 
 }
 @media screen and (min-width:51.25em) {
-    #record-view {margin-top:3.25rem; margin:5.25rem;}
+    #record-view { max-width:80%;}
     #record-view div {
         height:14rem;
-        width:11.75rem;
-        margin-top:5.25rem;
-    }
+        width:18.75rem;
 
+    }
+    #record-view div > p {width:18rem;font-size:1.8rem;}
     #record-view div:nth-child(1) {background-size:14rem 13rem}
     #record-view div:nth-child(2) {background-size:14rem 13rem}
     #record-view div:nth-child(3) {background-size:14rem 13rem}
-    #record-view div > p {font-size:3rem; span{font-size:1.8rem ;}}
 
+
+    #invitation-view p {font-size:3.0rem; margin:0 25%; }
+    #hero-view p {font-size:1.5rem; margin:0 25%; }
     #goals {margin-top:3.25rem}
     #goals div {
         height:9.75rem;
