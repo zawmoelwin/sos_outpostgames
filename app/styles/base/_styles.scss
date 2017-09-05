@@ -332,7 +332,10 @@ main {
 #invitation {margin:5% auto; height:100%}
 #invitation-view div{margin-top:50rem;height:23.75rem;width:18rem;margin:auto;}
 #invitation-view div:nth-child(1) {background:url('../images/svg/_Invitational_logo.svg') no-repeat center center;}
-#invitation-view p {font-size:1.8rem;margin:10%;max-width:100rem;}
+#invitation-view div:nth-child(2) {background:url('../images/svg/Horizontal_banner.svg') no-repeat center center;}
+#invitation-view p {font-size:2rem;margin:0 10%;max-width:100rem;; span{font-size:1.0rem;position: relative; top:-1rem; }}
+#invitation-view div p {font-size:1rem;margin:10%;max-width:100rem;}
+#invitation-view .banner {height:2rem;}
 
 #hero {color:#e23849;margin:5% auto; width:100%}
 #hero-view div{margin-top:50rem;height:9.75rem;width:8rem;margin:auto;}
@@ -517,7 +520,7 @@ main {
     #summary div {width:6.625rem}
     #four-boxes {max-width:33rem}
     #four-boxes div {width:6.625rem; margin-top:2rem;}
-    #invitation-view p {font-size:2.0rem;margin:10%}
+    #invitation-view p {font-size:2.0rem;margin:0 10%; span{font-size:1.2rem;}}
 }
 @media screen and (min-width:47em) {
 
@@ -573,7 +576,7 @@ main {
     #record-view div:nth-child(3) {background-size:14rem 13rem}
 
 
-    #invitation-view p {font-size:3.0rem; margin:0 25%; }
+    #invitation-view p {font-size:3.0rem; margin:0 25%; span{font-size:1.8rem;}}
     #hero-view p {font-size:1.5rem; margin:0 25%; }
     #goals {margin-top:3.25rem}
     #goals div {
