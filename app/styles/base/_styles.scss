@@ -393,7 +393,7 @@ main {
 
   div{
     p{
-      color:goldenrod
+      color:#6c302a;
     }
     margin-bottom: 1.25rem;
 
@@ -412,6 +412,7 @@ main {
     background-position:center;
     background-repeat:no-repeat;
 }
+
 
 /*----------------------------------------start of four boxes-----------------------------------------*/
 
@@ -530,7 +531,7 @@ main {
     }
     #four-boxes div:nth-child(n){background-size:9.6875rem 7.4375rem}
     #four-boxes div > p {font-size: 1.25rem}
-    #four-boxes div > p > span {font-size: 3rem}
+    #four-boxes div > p > span {font-size: 2.5rem}
 
 }
 @media screen and (min-width:51.25em) {
@@ -576,12 +577,10 @@ main {
         width:12rem;
         margin-top:2rem;
     }
-    #four-boxes div:nth-child(1),
-    #four-boxes div:nth-child(2),
-    #four-boxes div:nth-child(3),
-    #four-boxes div:nth-child(4){background-size:12rem 9.25rem}
-    #four-boxes div > p {font-size: 1.5rem}
-    #four-boxes div > p > span {font-size: 4rem}
+
+    #four-boxes div:nth-child(n){background-size:12rem 9.25rem}
+    #four-boxes div > p {font-size: 1.5rem; color:darkred;}
+    #four-boxes div > p > span {font-size: 3.4rem}
 }
 /* -------------------------------------------- END OVERVIEW -------------------------------------------- */
 
