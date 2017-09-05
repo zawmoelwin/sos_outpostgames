@@ -329,13 +329,15 @@ main {
 
 /* ---------------------------------------------- Record-view ---------------------------------------------- */
 
+#hero {margin-top:2rem; margin:auto;}
+#hero div:first-child {background:url('../images/svg/Autorgraph_hero.svg') no-repeat center;}
+#hero div:first-child{background-size:7rem 10rem}
 
-#record-view {margin-top:2rem; margin:auto;}
 
 #record-view div{margin-top:50rem;height:9.75rem;width:8rem;margin:auto;}
-#record-view div:nth-child(1) {background:url('../images/svg/_record_icon.svg') no-repeat center bottom;}
-#record-view div:nth-child(2) {background:url('../images/svg/_send_icon.svg') no-repeat center bottom;}
-#record-view div:nth-child(3) {background:url('../images/svg/_impress_icon.svg') no-repeat center bottom;}
+#record-view div:nth-child(1) {background:url('../images/svg/gray_entrance.svg') no-repeat center bottom;}
+#record-view div:nth-child(2) {background:url('../images/svg/gray_applause-1.svg') no-repeat center bottom;}
+#record-view div:nth-child(3) {background:url('../images/svg/gray_vote_icon.svg') no-repeat center bottom;}
 #record-view div > p {font-size: 1.5rem}
 #record-view div:nth-child(1) {background-size:auto 100%}
 #record-view div:nth-child(2) {background-size:auto 100%}
