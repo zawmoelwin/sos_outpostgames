@@ -329,11 +329,12 @@ main {
 /* ----------------------------------------------- END MAIN ---------------------------------------------- */
 
 /* ---------------------------------------------- Record-view ---------------------------------------------- */
-#invitation {margin:5% auto; height:100%}
-#invitation-view div{margin-top:5rem;height:23.75rem;width:18rem;margin:auto;}
+#invitation {height:100%}
+#invitation-logo{margin-top:2rem!important;}
+#invitation-view div{height:23.75rem;width:18rem;margin:auto;}
 #invitation-view div:nth-child(1) {background:url('../images/svg/_Invitational_logo.svg') no-repeat center center;}
 #invitation-view div:nth-child(2) {background:url('../images/svg/Horizontal_banner.svg') no-repeat center center;}
-#invitation-view p {font-size:2rem;margin:0 10%;max-width:100rem;; span{font-size:1.0rem;position: relative; top:-1rem; }}
+#invitation-view p {font-size:2rem;font-weight:bold;margin:0 10%;max-width:100rem;; span{font-size:1.0rem;position: relative; top:-1rem; }}
 #invitation-view div p {font-size:1rem;margin:10%;max-width:100rem;}
 #invitation-view .banner {height:2rem;}
 
@@ -511,6 +512,7 @@ main {
     #record-view div {
       height:11rem;
       width:12rem;
+    #invitation-view div:nth-child(1){background-size:33rem 53rem ;}
 
   }
   #record-view div > p {width:18rem;font-size:1.8rem;}
@@ -578,7 +580,10 @@ main {
     #record-view div:nth-child(3) {background-size:13rem 13rem}
 
 
-    #invitation-view p {font-size:3.0rem; margin:0 25%; span{font-size:1.8rem;}}
+    #invitation-view p {font-size:3.0rem; font-weight:bold; margin:0 25%; span{font-size:1.8rem;}}
+    #invitation-logo{margin-top:5rem!important;}
+    #invitation-view div{height:43.75rem;width:41rem;margin:auto;}
+    #invitation-view div:nth-child(1){background-size:31rem 53rem ;}
     #hero-view p {font-size:1.5rem; margin:0 25%; }
     #goals {margin-top:3.25rem}
     #goals div {
@@ -864,11 +869,19 @@ width: 100%;}
 }
 /* ---------------------------------------- END PAGE DIVIDER ONE ---------------------------------------- */
 
+/* backgound for season invitational*/
 
+#invitation {
+  background:url('../images/live-premiere-background.png');
+  background-repeat:no-repeat;
+  background-position:top center;
+  background-size:46.875rem 22.375rem;
 
+  margin-top:-14.6875rem;
+  padding-top:14.6875rem;
+}
 
-
-
+/**/
 
 
 /* -------------------------------------------- LIVE PREMIERE ------------------------------------------- */
