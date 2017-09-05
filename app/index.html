@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <title>SOS - Outpost Games</title>
 
-    <style>body{overflow:hidden}#loading{background:#fff;height:100%;width:100%;position:fixed;top:0;left:0;z-index:200}.tr-op{transition:opacity .3s ease-in-out!important}#loading svg{fill:#c64c34;height:91px;width:87px;position:absolute;top:50%;left:50%;z-index:2;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.animated.slow{-webkit-animation-duration:2s;animation-duration:2s}.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}@-webkit-keyframes a{0%{opacity:.5}50%{opacity:1}to{opacity:.5}}@keyframes a{0%{opacity:.5}50%{opacity:1}to{opacity:.5}}.fade-pulse{-webkit-animation-name:a;animation-name:a}.hide{display:none}.hidden,.initH{opacity:0}.delay-01{transition-delay:.1875s!important;transition-delay:375ms!important}.delay-02{transition-delay:.75s!important}#loading.done{opacity:0}</style>
+    <style>.special-nav{display: none;}body{overflow:hidden}#loading{background:#fff;height:100%;width:100%;position:fixed;top:0;left:0;z-index:200}.tr-op{transition:opacity .3s ease-in-out!important}#loading svg{fill:#c64c34;height:91px;width:87px;position:absolute;top:50%;left:50%;z-index:2;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.animated.slow{-webkit-animation-duration:2s;animation-duration:2s}.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}@-webkit-keyframes a{0%{opacity:.5}50%{opacity:1}to{opacity:.5}}@keyframes a{0%{opacity:.5}50%{opacity:1}to{opacity:.5}}.fade-pulse{-webkit-animation-name:a;animation-name:a}.hide{display:none}.hidden,.initH{opacity:0}.delay-01{transition-delay:.1875s!important;transition-delay:375ms!important}.delay-02{transition-delay:.75s!important}#loading.done{opacity:0}</style>
 
       <link rel="shortcut icon" href="/images/favicons/sosfavicon-16x16.png">
       <link rel="apple-touch-icon" href="/images/favicons/sosfavicon-16x16.png">
@@ -26,9 +26,9 @@
     NProgress.start();
   </script>
   <style>
-    #nprogress{pointer-events:none}#nprogress .bar{background:#ffb700;position:fixed;z-index:1031;top:0;left:0;width:100%;height:6px}#nprogress .peg{display:block;position:absolute;right:0px;width:100px;height:100%;opacity:1.0;-webkit-transform:rotate(3deg) translate(0px, -4px);transform:rotate(3deg) translate(0px, -4px)}#nprogress .spinner{display:none}.nprogress-custom-parent{overflow:hidden;position:relative}.nprogress-custom-parent #nprogress .spinner,.nprogress-custom-parent #nprogress .bar{position:absolute}
+    #nprogress{pointer-events:none}#nprogress .bar{background:#ffb700;position:fixed; z-index:1031;top:0;left:0;width:100%;height:6px}#nprogress .peg{display:block;position:absolute;right:0px;width:100px;height:100%;opacity:1.0;-webkit-transform:rotate(3deg) translate(0px, -4px);transform:rotate(3deg) translate(0px, -4px)}#nprogress .spinner{display:none}.nprogress-custom-parent{overflow:hidden;position:relative}.nprogress-custom-parent #nprogress .spinner,.nprogress-custom-parent #nprogress .bar{position:absolute}
   </style>
-  <body class="tk-din-2014">
+  <body class="tk-din-2014 black-background">
     <nav class="initH tr-op delay-01 site-nav-layout bg-white fixed shadow-4 top-0 w-100 z-1" >
   <!-- BEGIN HAMBURGER MENU -->
   <div class="absolute ml3 pointer z-1   ml4-ns  dn-xl" id="menu-button" role="button">
@@ -55,7 +55,7 @@
       <div class="mb4 pb4 tc   mb0-xl pb0-xl tl-xl navbar_links" data-gumshoe id="page-nav">
         <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl   nav-link-one" data-scroll href="#overview">Overview</a>
         <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl   nav-link-two" data-scroll href="#media">Media</a>
-        <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl   nav-link-three" data-scroll href="#live-premiere">Live Premiere</a>
+        <a class="red db f4 fw7 hover-light-silver lh-solid link mb3 pointer tracked ttu   di-xl f5-xl fw8-xl mb0-xl   nav-link-three" data-scroll href="#debut">debut</a>
         <a class="red db f4 fw7 hover-light-silver lh-solid link pointer tracked ttu       di-xl f5-xl fw8-xl          nav-link-four" target="_blank" href="https://feedback.sosgame.com/">Support</a>
       </div>
       <!-- End Page Nav -->
@@ -103,13 +103,16 @@
 </nav>
 
 
+
+
     <!-- Parallax Hero -->
     <header class="site-header-layout tr-op initH delay-00">
+
       <div class="site-header_scenes-container">
         <!-- // SCENE 1 // -->
         <section id="scene-1" class="site-header-layout_scene scene-container tr-op">
 
-          <img class="lazy hide" data-src="images/scenes/scene-1/scene-1_layer-1-raw.png">
+          <img class="lazy hide" data-src="images/scenes/scene-1/Layer_48_new.png">
           <div class="scene-1_layer-1 scene-layer scene-layer--1"></div>
 
           <img class="lazy hide" data-src="images/scenes/scene-1/scene-1_layer-2.png">
@@ -137,11 +140,6 @@
       </div>
     </header>
 
-    <!-- Scene JS -->
-    <script src="scenes.js"></script>
-    <link href="styles/scenes.css" rel="stylesheet">
-
-    <!-- Main -->
     <main class="initH tr-op delay-02 bg-washed-yellow">
       <!-- OVERVIEW -->
       <div class="ph3 ph4-ns" id="overview">
@@ -178,8 +176,6 @@
             <iframe allowfullscreen class="z-0" frameborder='0' src='https://www.youtube.com/embed/46lp_xa7pos'></iframe>
           </div>
         </div>
-        <!-- Summary -->
-
 
         <div class="center flex flex-wrap justify-between" id="summary">
           <div class="dt h-100">
@@ -205,12 +201,14 @@
             Survivors</p>
           </div>
         </div>
-        <!-- Summary -->
+
+
       </div>
       <!-- END OVERVIEW -->
 
 
       <!-- MEDIA -->
+
       <div class="center ph3 mw-67 ph4-ns" id="media">
         <div class="center flex flex-wrap justify-between" id="gallery-buttons">
           <button class="b--red ba br2 bw1 f5 ff3 fw7 pointer tc tk-din-2014 tracked ttu f4-ns bw2-l show" id="image-gallery-button">Image Gallery</button> <button class="b--red ba br2 bw1 f5 ff3 fw7 pointer tc tk-din-2014 tracked ttu f4-ns bw2-l" id="video-gallery-button">Video Gallery</button>
@@ -310,79 +308,97 @@
       <!-- END MEDIA -->
 
 
-      <!-- DIVIDER ONE -->
-      <div class="center flex justify-between mw-84 ph3 ph4-ns" id="divider-one">
-        <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-one-left">
-        </div>
+<!-- DIVIDER ONE START-->
+
+<div class="center flex justify-between mw-84 ph3 ph4-ns" id="divider-one">
+  <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-one-left">
+  </div>
+  <div class="flex justify-between" id="middle">
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
 
 
-        <div class="flex justify-between" id="middle">
-          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
-          </div>
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
 
 
-          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
-          </div>
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
 
 
-          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
-          </div>
+    <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
+    </div>
 
 
-          <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
-          </div>
+    <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
+    </div>
 
 
-          <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
-          </div>
+    <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
+    </div>
 
 
-          <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
-          </div>
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
 
 
-          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
-          </div>
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
 
 
-          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
-          </div>
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+  </div>
+
+  <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-one-right">
+  </div>
+</div>
+<!-- DIVIDER ONE END-->
+
+      <div class="ph3 ph4-ns" id="invitation">
+  <div class="center" id="invitation-view">
+    <div id="invitation-logo" class="dt h-100">
+
+    </div>
+    <div class="dt h-100 banner">
+      <p class="dark-red center dtc fw7 pv3 tc tracked-narrow ttu v-mid pv0-ns">join us the weekend of<br>
+    </div>
+    <p class="red f6 lh-copy mt4 pt3 tc f-3-ns pt4-ns">SEPTEMBER 30<span>th</span> & OCTOBER 1<span>st</span> <br> NOON - 6PM PDT</p>
 
 
-          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
-          </div>
-        </div>
+  </div>
+</div>
 
 
-        <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-one-right">
-        </div>
-      </div>
-      <!-- END DIVIDER ONE -->
+
+<div class="center flex flex-wrap justify-between" id="four-boxes">
+  <div class="dt h-100">
+    <p class="dark-red center dtc fw7 pv3 tc tracked-narrow ttu v-mid pv0-ns"><span>100</span><br>
+    Proven <br>performers</p>
+  </div>
 
 
-      <!-- LIVE PREMIERE -->
-      <div id="live-premiere-wrap">
-        <div class="ph3 ph4-ns bg-grfeen o-f50" id="live-premiere">
-          <h1 class="f-32 fw8 gold tc ttu f-50-ns">Live Premiere</h1>
+  <div class="dt h-100">
+    <p class="dark-red center dtc fw7 pv3 tc tracked-narrow ttu v-mid pv0-ns"><span>100</span><br>
+    rising <br>stars</p>
+  </div>
 
 
-          <p class="center dark-red f5 lh-copy measure mt3 tc f-18-ns mt4-ns">The SOS Alpha Live Premiere took place June 24th and 25th. 16 determined contestants entertained us in their fight for fame and fortune. In the end, two topped the leaderboards.</p>
+  <div class="dt h-100">
+    <p class="dark-red dtc center 2-winner fw7 pv3 tc tracked-narrow ttu v-mid pv0-ns"><span>2</span><br>
+    Winners</p>
+  </div>
 
 
-          <h2 class="f3 fw7 red tc ttu f-30-ns">Congratulations Winners</h2>
+  <div class="dt h-100">
+    <p class="dark-red center dtc fw7 pv3 tc tracked-narrow ttu v-mid pv0-ns"><span>1</span><br>
+    Hell of <br>   a show</p>
+  </div>
+</div>
 
 
-          <div class="center mw-63 cf" id="winners">
-          <a href="https://www.twitch.tv/abittoolethal" target="_blank">
-            <img class="db self-start" src="images/survivor.jpg">
-          </a>
-          <a href="https://www.twitch.tv/lowco" target="_blank">
-            <img class="db self-start" src="images/performer.jpg">
-          </a>
-          </div>
-        </div>
-      </div>
-      <!-- END LIVE PREMIERE -->
+
+
 
 
       <!-- DIVIDER TWO -->
@@ -402,6 +418,134 @@
 
 
       <!-- Beta-->
+
+
+    <!-- TODO put the ribbon image in the background  -->
+    <div>JOIN US THE WEEKEND OF</div>
+    <!-- TODO FORMAT THE DATE AND TIME -->
+    <div>SEPTEMBER 30TH & OCTOBER 1ST</div>
+    <div>NOON -6PM PDT</div>
+    <!-- TODO ADD 4 SVG for the proven performers, rising stars, winners, hell of a show  -->
+
+    <div class="ph3 ph4-ns" id="hero">
+  <div class="center" id="hero-view">
+    <div class="dt h-100">
+
+    </div>
+    <h1 class="hero-header f-32 fw8 red-pink tc ttu f-50-ns">make your mark</h1>
+    <p class="center f2 lh-copy mt4 pt3 tc f-3-ns pt4-ns">SOS integrates with the Hero platform so that every player can become a performer.  With Hero every game you play has a live audience whether youre streaming or not. Entertain the crowd and become the star of the show.</p>
+
+  </div>
+</div>
+
+
+
+<div class="ph3 ph4-ns" id="record">
+  <div class="center flex flex-wrap justify-between center" id="record-view">
+    <div class="dt h-100">
+      <p class="red dtc fw7 pv3 tc tracked-narrow ttu v-mid pb0-ns pt2-ns">Step in front<br> of a live audience </p>
+    </div>
+
+
+    <div class="dt h-100">
+      <p class="red dtc fw7 pv3 tc tracked-narrow ttu v-mid pb0-ns pt2-ns">feel the<br> crowd roar </p>
+    </div>
+
+    <div class="dt h-100">
+      <p class="red dtc fw7 pv3 tc tracked-narrow ttu v-mid pb0-ns pt2-ns">trigger votes, <br>change the game </p>
+    </div>
+
+  </div>
+</div>
+
+
+    <div class='row'>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+
+    <!-- TODO AUTITION OPEN large white font -->
+    <!-- <div>
+        AUTITIONS OPEN
+    </div> -->
+
+    <!-- TODO AUTITION OPEN medium yellow font -->
+    <!-- <div>
+        Amarant is on the hunt for the world's most entertaining personalities. Audition today for your shot at fame and fortune.
+    </div> -->
+
+    <!-- TODO APPLY NOW button  -->
+    <!-- <div class='btn'>
+      APPLY NOW
+    </div> -->
+    <!-- TODO add single row of seperator -->
+    <!-- <div>second seperator image here</div> -->
+
+
+    <!-- TODO add single row of seperator -->
+    <!-- <div>chat seperator image here</div> -->
+
+    <!-- TODO USER LIST -->
+
+
+<!-- DIVIDER ONE START-->
+
+<div class="center flex justify-between mw-84 ph3 ph4-ns" id="divider-one">
+  <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-one-left">
+  </div>
+  <div class="flex justify-between" id="middle">
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+
+
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+
+
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+
+
+    <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
+    </div>
+
+
+    <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
+    </div>
+
+
+    <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
+    </div>
+
+
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+
+
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+
+
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+  </div>
+
+  <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-one-right">
+  </div>
+</div>
+<!-- DIVIDER ONE END-->
+
+
+
+
+    <!-- Scene JS -->
+    <script src="scenes.js"></script>
+    <link href="styles/scenes.css" rel="stylesheet">
+
+
+
+      <!-- Beta-->
       <div id="support-wrapper">
         <div class="bg-gfreen ph3 tc signup ph4-ns" id="beta">
         <h1 class="center f-32 fw8 gold ttu f-50-ns">Accepting applications for our closed beta</h1>
@@ -410,7 +554,7 @@
         <h2 class="f3 fw7 mb0 red ttu f-30-ns">Dates to be announced</h2>
 
 
-        <p class="center f5 lh-title red f5-ns">Follow SOS on Twitter and Facebook for updates</p>
+        <p class="center f3 lh-title red f3-ns">Follow SOS on Twitter and <br>Facebook for updates</p>
 
 
         <!-- <form class="center" id="alpha-signup" name="alpha-signup">
@@ -451,12 +595,12 @@
             name="email"
             type="email"
             class="bl-0 br-0 bt-0 center db gray input-reset pt1 tc tracked-narrow w-100 input"
-            placeholder="Enter Your Email"
+            placeholder="Enter Email"
             required />
-          <div class="g-recaptcha "
+          <!-- <div class="g-recaptcha "
             data-sitekey="6Lfo0hYUAAAAAEBnbDhZ9j1PMQAjLDyuwf7JTaWT"
             data-callback="onRecaptchaResponse">
-          </div>
+          </div> -->
           <input class="btn bg-red bn br2 center db f4 fw8 pointer tracked ttu white w-100" id="signup-btn" type="submit" value="SUBMIT" disabled />
           <a class="db f6 fw7 hover-light-silver link red ttu" href="https://www.outpostgames.com/signup" id="code">Already have a code?</a>
         </form>
@@ -478,9 +622,9 @@
     var successMsg = $('#signup-success');
     var error = $('#signup-error');
 
-    function onRecaptchaResponse(response) {
+    // function onRecaptchaResponse(response) {
       enableSignupForm();
-    }
+    // }
 
     $(function () {
       $('#signup-form form').submit(function (e) {
@@ -627,7 +771,7 @@
     <script src="app.js"></script>
     <script src="SmoothScroll.js"></script>
     <!-- <script src="scripts/forms.min.js"></script> -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -638,7 +782,6 @@
     ga('create', 'UA-89928640-6', 'auto');
     ga('send', 'pageview');
     </script>
-
   </body>
 </html>
 
