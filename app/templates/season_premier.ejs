@@ -28,86 +28,54 @@
   <style>
     #nprogress{pointer-events:none}#nprogress .bar{background:#ffb700;position:fixed; z-index:1031;top:0;left:0;width:100%;height:6px}#nprogress .peg{display:block;position:absolute;right:0px;width:100px;height:100%;opacity:1.0;-webkit-transform:rotate(3deg) translate(0px, -4px);transform:rotate(3deg) translate(0px, -4px)}#nprogress .spinner{display:none}.nprogress-custom-parent{overflow:hidden;position:relative}.nprogress-custom-parent #nprogress .spinner,.nprogress-custom-parent #nprogress .bar{position:absolute}
   </style>
-  <body class="tk-din-2014">
+  <body class="tk-din-2014 ">
     <%- include partials/new_header.ejs %>
 
     <%- include partials/second_nav_header.ejs %>
 
     <!-- Parallax Hero -->
-    <header class="site-header-layout tr-op initH delay-00">
-      <!-- TODO add the parallex photos for the international pictures -->
-      <div class="site-header_scenes-container">
-        <!-- // SCENE 1 // -->
-        <section id="scene-1" class="site-header-layout_scene scene-container tr-op">
+    <img class='background-season' src="images/scenes/scene-2/scene-2_layer-1-new.jpg">
 
-          <img class="lazy hide" data-src="images/scenes/scene-1/scene-1_layer-1-raw.png">
-          <div class="scene-1_layer-1 scene-layer scene-layer--1"></div>
 
-          <img class="lazy hide" data-src="images/scenes/scene-1/scene-1_layer-2.png">
-          <div class="scene-1_layer-2 scene-layer scene-layer--2"></div>
 
-          <img class="lazy hide" data-src="images/scenes/scene-1/scene-1_layer-3.png">
-          <div class="scene-1_layer-3 scene-layer scene-layer--3"></div>
+    <%- include partials/header-cta-season.ejs %>
 
-          <img class="lazy hide" data-src="images/scenes/scene-1/scene-1_layer-4.png">
-          <div class="scene-1_layer-4 scene-layer scene-layer--4"></div>
 
-          <img class="lazy hide" data-src="images/scenes/scene-1/scene-1_layer-5.jpg">
-          <div class="scene-1_layer-5 scene-layer scene-layer--5"></div>
-        </section>
-      </div>
 
-      <section id="scene-2" class="scene-container tr-op">
-        <img data-src="images/scenes/scene-2/scene-2_layer-1-new.jpg" class="lazy-mb">
-      </section>
 
-      <!-- Sign Up Button-->
-      <div class="center" id="header-cta">
-        <img src="images/svg/_Invitational_logo.svg">
 
-      </div>
-
-    </header>
-    <!-- TODO put the ribbon image in the background  -->
-    <div>JOIN US THE WEEKEND OF</div>
-    <!-- TODO FORMAT THE DATE AND TIME -->
-    <div>SEPTEMBER 30TH & OCTOBER 1ST</div>
-    <div>NOON -6PM PDT</div>
-    <!-- TODO ADD 4 SVG for the proven performers, rising stars, winners, hell of a show  -->
     <%- include partials/fourboxes_for_season.ejs %>
+
     <div class="row">
       <div>
     This is start of four boxes
       </div>
     </div>
-    <!-- TODO add survival fame boxes -->
-    <%- include partials/survival-fame.ejs %>
-    <h1>This is start of survival fame boxes</h1>
-    <!-- TODO add ribbon for the div -->
-    <div>AMARANT IS PROUD TO PRESENT</div>
-    <!-- TODO format it to be large -->
-    <div>
-      THE SOS INVITATIONAL
-    </div>
 
-    <!-- TODO single row of  -->
-    <div>
-      Where 200 of the world's top performers will compete for fame and fortune on La Cuna Island.
-    </div>
-    <!-- TODO add two row of data -->
-    <div class="row">
-      <div class="col"></div>
-      <div class="col"></div>
-    </div>
-    <!-- TODO add single row of seperator -->
-    <div>seperator image here</div>
-    <!-- TODO put three images of RECORD, SEND, IMPRESS -->
+    <%- include partials/survival-fame.ejs %>
+
+    <h1>This is start of survival fame boxes</h1>
+
+    <!-- TODO add ribbon for the div -->
+    <%- include partials/proud-present-season.ejs %>
+
+
+
+    <!-- DIVIDER TWO -->
+    <div class="center flex justify-between mw-84 ph3 ph4-ns" id="divider-two">
+        <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-two-left">
+        </div>
+
+
+        <div class="tc" id="punch"><img src="images/icons/punch.svg">
+        </div>
+
+
+        <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-two-right">
+        </div>
+      </div>
+      <!-- END DIVIDER TWO -->
     <%- include partials/record_send_impress_for_season.ejs %>
-    <div class='row'>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-    </div>
 
     <!-- TODO AUTITION OPEN large white font -->
     <div>
@@ -123,7 +91,22 @@
       APPLY NOW
     </div>
     <!-- TODO add single row of seperator -->
-    <div>second seperator image here</div>
+
+
+  <!-- DIVIDER TWO -->
+  <div class="center flex justify-between mw-84 ph3 ph4-ns" id="divider-two">
+      <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-two-left">
+      </div>
+
+
+      <div class="tc" id="punch"><img src="images/icons/punch.svg">
+      </div>
+
+
+      <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-two-right">
+      </div>
+    </div>
+    <!-- END DIVIDER TWO -->
 
     <!-- TODO USER LIST -->
     <%- include partials/list_of_user.ejs %>
@@ -138,410 +121,6 @@
     <script src="scenes.js"></script>
     <link href="styles/scenes.css" rel="stylesheet">
 
-    <!-- Main -->
-    <main class="initH tr-op delay-02 bg-washed-yellow">
-      <!-- OVERVIEW -->
-      <div class="ph3 ph4-ns" id="overview">
-        <h1 class="f-32 fw8 gold tc ttu f-50-ns">Welcome, Contestant</h1>
-
-
-        <div class="center flex flex-wrap justify-between mw-50" id="goals">
-          <div class="dt h-100">
-            <p class="dark-red dtc fw7 pv3 tc tracked-narrow ttu v-mid pb0-ns pt2-ns">Retrieve Relic</p>
-          </div>
-
-
-          <div class="dt h-100">
-            <p class="dark-red dtc fw7 pv3 tc tracked-narrow ttu v-mid pb0-ns pt2-ns">Signal for<br>
-            Extraction</p>
-          </div>
-
-
-          <div class="dt h-100">
-            <p class="dark-red dtc fw7 pv3 tc tracked-narrow ttu v-mid pb0-ns pt2-ns">Escape<br>
-            the Island</p>
-          </div>
-        </div>
-
-
-        <p class="center dark-red f5 lh-copy measure mt4 pt3 tc f-18-ns pt4-ns">The goal of SOS is simple: find a relic, signal for extraction, and escape on the helicopter. With sixteen Contestants and only three seats on the helicopter, you'll need to out-think, out-run, and out-fight your opponents.</p>
-
-
-        <p class="center dark-red f5 lh-copy measure tc f-18-ns">Use the power of your own voice and personality to create bonds with other Contestants and the audience. Statistics show Contestants that work together have a higher rate of survival than those who don't.</p>
-
-
-        <div class="center mt4 pt3 mw-63 mt5-ns pt4-ns" id="video-wrapper">
-          <div id="embed-container">
-            <iframe allowfullscreen class="z-0" frameborder='0' src='https://www.youtube.com/embed/46lp_xa7pos'></iframe>
-          </div>
-        </div>
-        <!-- Summary -->
-
-
-        <div class="center flex flex-wrap justify-between" id="summary">
-          <div class="dt h-100">
-            <p class="dark-red dtc fw7 pv3 tc tracked-narrow ttu v-mid pv0-ns"><span>1</span><br>
-            Island</p>
-          </div>
-
-
-          <div class="dt h-100">
-            <p class="dark-red dtc fw7 pv3 tc tracked-narrow ttu v-mid pv0-ns"><span>16</span><br>
-            Contestants</p>
-          </div>
-
-
-          <div class="dt h-100">
-            <p class="dark-red dtc fw7 pv3 tc tracked-narrow ttu v-mid pv0-ns"><span>30</span><br>
-            Minutes</p>
-          </div>
-
-
-          <div class="dt h-100">
-            <p class="dark-red dtc fw7 pv3 tc tracked-narrow ttu v-mid pv0-ns"><span>3</span><br>
-            Survivors</p>
-          </div>
-        </div>
-        <!-- Summary -->
-      </div>
-      <!-- END OVERVIEW -->
-
-
-      <!-- MEDIA -->
-      <div class="center ph3 mw-67 ph4-ns" id="media">
-        <div class="center flex flex-wrap justify-between" id="gallery-buttons">
-          <button class="b--red ba br2 bw1 f5 ff3 fw7 pointer tc tk-din-2014 tracked ttu f4-ns bw2-l show" id="image-gallery-button">Image Gallery</button> <button class="b--red ba br2 bw1 f5 ff3 fw7 pointer tc tk-din-2014 tracked ttu f4-ns bw2-l" id="video-gallery-button">Video Gallery</button>
-        </div>
-
-
-        <div class="cf show" id="image-gallery">
-
-          <div class="item">
-            <a class="dib gallery-item nt1" href="images/gallery/images/image1.jpg">
-            <img alt="image" class="br2 dib" src="images/gallery/images/small/image2.png"></a>
-          </div>
-
-          <div class="item">
-            <a class="dib gallery-item nt1" href="images/gallery/images/image2.jpg">
-            <img alt="image" class="br2 dib" src="images/gallery/images/small/image1.png"></a>
-          </div>
-
-          <div class="item">
-            <a class="dib gallery-item nt1" href="images/gallery/images/image3.jpg">
-            <img alt="image" class="br2 dib" src="images/gallery/images/small/image3.png"></a>
-          </div>
-
-          <div class="item">
-            <a class="dib gallery-item nt1" href="images/gallery/images/image4.jpg">
-            <img alt="image" class="br2 dib" src="images/gallery/images/small/image4.png"></a>
-          </div>
-
-          <div class="item">
-            <a class="dib gallery-item nt1" href="images/gallery/images/image5-new.jpg">
-            <img alt="image" class="br2 dib" src="images/gallery/images/small/image5.png"></a>
-          </div>
-
-          <div class="item">
-            <a class="dib gallery-item nt1" href="images/gallery/images/image7-gallery.jpg">
-            <img alt="image" class="br2 dib" src="images/gallery/images/small/image6.png"></a>
-          </div>
-
-          <!-- <div class="item">
-            <a class="dib gallery-item nt1" href="images/gallery/images/SOS_Concept_Relic_C-2.jpg">
-            <img alt="image" class="br2 dib" src="images/gallery/images/small/image7.png"></a>
-          </div>   -->
-          <div class="item">
-            <a class="dib gallery-item nt1" href="images/gallery/images/idk.jpg">
-            <img alt="image" class="br2 dib" src="images/gallery/images/small/idk-sm.jpg"></a>
-          </div>
-
-          <div class="item">
-            <a class="dib gallery-item nt1" href="images/gallery/images/SOS_Concept_Relic_B-2.jpg">
-            <img alt="image" class="br2 dib" src="images/gallery/images/small/image8.png"></a>
-          </div>
-        </div>
-
-
-        <div class="cf" id="video-gallery">
-          <div class="item">
-            <a class="dib popup-youtube nt1" href="https://www.youtube.com/watch?v=0yeHu-CE98s?autoplay=1&rel=0&ytp-pause-overlay=0" rel="youtube">
-            <img alt="image" class="br2 dib" src="images/videos/MorganFreeman232.jpg"></a>
-          </div>
-
-          <div class="item">
-            <a class="dib popup-youtube nt1" href="https://www.youtube.com/watch?v=DrP5zGUM5gM?autoplay=1&rel=0&ytp-pause-overlay=0" rel="youtube">
-            <img alt="image" class="br2 dib" src="images/videos/hybridpanda232.jpg"></a>
-          </div>
-
-          <div class="item">
-            <a class="dib popup-youtube nt1" href="https://www.youtube.com/watch?v=hWKPe2-xyoE?autoplay=1&rel=0&ytp-pause-overlay=0" rel="youtube">
-            <img alt="image" class="br2 dib" src="images/videos/Ohmwrecker232.jpg"></a>
-          </div>
-
-          <div class="item">
-            <a class="dib popup-youtube nt1" href="https://www.youtube.com/watch?v=fzax_5r7v9E?autoplay=1&rel=0&ytp-pause-overlay=0" rel="youtube">
-            <img alt="image" class="br2 dib" src="images/videos/H2ODelirious232.jpg"></a>
-          </div>
-
-          <div class="item">
-            <a class="dib popup-youtube nt1" href="https://www.youtube.com/watch?v=RJs0E4Qqq3M&t=2s?autoplay=1&rel=0&ytp-pause-overlay=0" rel="youtube">
-            <img alt="image" class="br2 dib" src="images/videos/Shadowfrax232.jpg"></a>
-          </div>
-
-          <div class="item">
-            <a class="dib popup-youtube nt1" href="https://www.youtube.com/watch?v=3fsdw30mQmE?autoplay=1&rel=0&ytp-pause-overlay=0" rel="youtube">
-            <img alt="image" class="br2 dib" src="images/videos/Sattelizer232.jpg"></a>
-          </div>
-
-          <div class="item">
-            <a class="dib popup-youtube nt1" href="https://www.youtube.com/watch?v=wDBnIw9Wc1g?autoplay=1&rel=0&ytp-pause-overlay=0" rel="youtube">
-            <img alt="image" class="br2 dib" src="images/videos/Vertiigo232.jpg"></a>
-          </div>
-
-          <div class="item">
-            <a class="dib popup-youtube nt1" href="https://www.youtube.com/watch?v=alQ9xYQ1MGg?autoplay=1&rel=0&ytp-pause-overlay=0" rel="youtube">
-            <img alt="image" class="br2 dib" src="images/videos/GameSociety232.jpg"></a>
-          </div>
-        </div>
-      </div>
-      <!-- END MEDIA -->
-
-
-      <!-- DIVIDER ONE -->
-      <div class="center flex justify-between mw-84 ph3 ph4-ns" id="divider-one">
-        <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-one-left">
-        </div>
-
-
-        <div class="flex justify-between" id="middle">
-          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
-          </div>
-
-
-          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
-          </div>
-
-
-          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
-          </div>
-
-
-          <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
-          </div>
-
-
-          <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
-          </div>
-
-
-          <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
-          </div>
-
-
-          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
-          </div>
-
-
-          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
-          </div>
-
-
-          <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
-          </div>
-        </div>
-
-
-        <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-one-right">
-        </div>
-      </div>
-      <!-- END DIVIDER ONE -->
-
-
-      <!-- LIVE PREMIERE -->
-      <div id="live-premiere-wrap">
-        <div class="ph3 ph4-ns bg-grfeen o-f50" id="live-premiere">
-          <h1 class="f-32 fw8 gold tc ttu f-50-ns">Live Premiere</h1>
-
-
-          <p class="center dark-red f5 lh-copy measure mt3 tc f-18-ns mt4-ns">The SOS Alpha Live Premiere took place June 24th and 25th. 16 determined contestants entertained us in their fight for fame and fortune. In the end, two topped the leaderboards.</p>
-
-
-          <h2 class="f3 fw7 red tc ttu f-30-ns">Congratulations Winners</h2>
-
-
-          <div class="center mw-63 cf" id="winners">
-          <a href="https://www.twitch.tv/abittoolethal" target="_blank">
-            <img class="db self-start" src="images/survivor.jpg">
-          </a>
-          <a href="https://www.twitch.tv/lowco" target="_blank">
-            <img class="db self-start" src="images/performer.jpg">
-          </a>
-          </div>
-        </div>
-      </div>
-      <!-- END LIVE PREMIERE -->
-
-
-      <!-- DIVIDER TWO -->
-      <div class="center flex justify-between mw-84 ph3 ph4-ns" id="divider-two">
-        <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-two-left">
-        </div>
-
-
-        <div class="tc" id="punch"><img src="images/icons/punch.svg">
-        </div>
-
-
-        <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-two-right">
-        </div>
-      </div>
-      <!-- END DIVIDER TWO -->
-
-
-      <!-- Beta-->
-      <div id="support-wrapper">
-        <div class="bg-gfreen ph3 tc signup ph4-ns" id="beta">
-        <h1 class="center f-32 fw8 gold ttu f-50-ns">Accepting applications for our closed beta</h1>
-
-
-        <h2 class="f3 fw7 mb0 red ttu f-30-ns">Dates to be announced</h2>
-
-
-        <p class="center f5 lh-title red f5-ns">Follow SOS on Twitter and Facebook for updates</p>
-
-
-        <!-- <form class="center" id="alpha-signup" name="alpha-signup">
-          <div class="form-group">
-
-            <input class="bl-0 br-0 bt-0 center db gray input-reset pt1 tc tracked-narrow w-100" id="email" name="email" placeholder="Enter Email Address" type="email">
-            <div class="g-recaptcha"
-              data-sitekey="6Lfo0hYUAAAAAEBnbDhZ9j1PMQAjLDyuwf7JTaWT"
-              data-callback="onRecaptchaResponse">
-            </div>
-            <input id="honey" name="honey" type="hidden">
-            <input required class="bg-red bn br2 center db f4 fw8 pointer tracked ttu white w-100" id="submit" disabled type="submit" value="Submit">
-            <div id="signup-success" class="hidden">
-    Check your inbox to confirm your email address<br/>
-    and secure your spot on the waitlist.
-  </div>
-
-
-            <div class="messageBox" id="validationBox">
-            </div>
-
-            <div class="success-message messageBox show-on-success hidden">
-              <p class="mb">Thanks for signing up!</p>
-            </div>
-
-            <div class="success-message messageBox show-on-fail hidden">
-              <p class="mb">
-              </p>
-            </div>
-            <a class="db f5 fw7 hover-light-silver link red ttu" href="https://www.outpostgames.com/signup" id="code">Already have a code?</a>
-          </div>
-        </form> -->
-      <div id="signup-form">
-        <form class="center">
-          <div id="signup-error" class="hidden"></div>
-          <input
-            id="email"
-            name="emaisl"
-            type="email"
-            class="bl-0 br-0 bt-0 center db gray input-reset pt1 tc tracked-narrow w-100 input"
-            placeholder="Enter Your Email"
-            required />
-          <div class="g-recaptcha "
-            data-sitekey="6Lfo0hYUAAAAAEBnbDhZ9j1PMQAjLDyuwf7JTaWT"
-            data-callback="onRecaptchaResponse">
-          </div>
-          <input class="btn bg-red bn br2 center db f4 fw8 pointer tracked ttu white w-100" id="signup-btn" type="submit" value="SUBMIT" disabled />
-          <a class="db f6 fw7 hover-light-silver link red ttu" href="https://www.outpostgames.com/signup" id="code">Already have a code?</a>
-        </form>
-        <div id="signup-success" class="hidden">
-    Check your inbox to confirm your email address<br/>
-    and secure your spot on the waitlist.
-  </div>
-        <script type="text/javascript">
-    var OG_API = 'https://www.outpostgames.com';
-    var SIGNUP_ERRORS = {
-      'email': 'Please enter a valid email',
-      'g-recaptcha-respose': 'Please complete the captcha'
-    };
-    var SIGNUP_ERROR_UNKNOWN = 'Signup is temporarily unavailable. Please try again later.';
-
-    var btn = $('#signup-btn');
-    var disableSignupForm = btn.attr.bind(btn, 'disabled', 'disabled');
-    var enableSignupForm = btn.attr.bind(btn, 'disabled', false);
-    var successMsg = $('#signup-success');
-    var error = $('#signup-error');
-
-    function onRecaptchaResponse(response) {
-      enableSignupForm();
-    }
-
-    $(function () {
-      $('#signup-form form').submit(function (e) {
-        e.preventDefault();
-        disableSignupForm();
-
-        // 200 - OK Success, no body
-        // 400 - Bad Request, body contains details
-        // 500 - Shit --> Fan, retry
-        // 503 - Service Unavailable, we've intentionally disabled it for some reason
-        $.ajax({
-          type:'POST',
-          url: OG_API + '/api/waitlist',
-          contentType: 'application/json',
-          processData: false,
-          data: JSON.stringify(
-            $(this).serializeArray()
-                   .reduce(function (m, f) {
-                     m[f.name] = f.value;
-                     return m;
-                   }, { })
-          )
-        }).done(function (data/*, textStatus, jqXHR */) {
-
-          $('#signup-form form').hide();
-          successMsg.removeClass('hidden');
-          ga('send', 'event', 'alpha', 'signup');
-        }).fail(function (jqXHR/*, textStatus, errorThrown */) {
-
-          switch (jqXHR.status) {
-            case 400:
-              if (jqXHR.responseJSON.error === 'validation-error') {
-                var errors = Object.keys(jqXHR.responseJSON.metadata[0].body)
-                                   .reduce(function (arr, k) {
-                                     $('#signup-form form #' + k).val('');
-                                     arr.push(SIGNUP_ERRORS[k]);
-                                     return arr;
-                                   }, []);
-                error.html(errors.join('<br/>'));
-              }
-              break;
-            default:
-              error.html(SIGNUP_ERROR_UNKNOWN);
-          }
-          error.removeClass('hidden');
-          enableSignupForm();
-          ga('send', 'event', 'alpha', 'signup-error');
-        });
-      });
-    });
-  </script>
-
-</div>
-        <div class="center flex items-center justify-between" id="availability">
-          <img src="images/logos/windows.svg">
-
-          <p class="dark-red f5 fw7 pt1 tl tracked-narrow ttu">Available on<br>
-          Windows 7 & Up</p>
-        </div>
-        <img id="papaya" src="images/icons/papaya.svg">
-        </div>
-      </div>
-      <!-- END Beta -->
-    </main>
 
     <!-- Footer -->
     <footer id="site-footer" class="initH tr-op bg-near-white ph3 ph4-ns">

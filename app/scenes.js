@@ -170,30 +170,30 @@ var removeLoader = function() {
 //
 // Add Scene
 //
-var add_scene = (function() {
-	var executed = false;
-    return function () {
-        if (!executed) {
+// var add_scene = (function() {
+// 	var executed = false;
+//     return function () {
+//         if (!executed) {
 
-            executed = true;
+//             executed = true;
 
-            var controller = new ScrollMagic.Controller();
-			var tween = new TimelineMax ()
-				.add([
-					TweenMax.fromTo(scene_cta, 1, {top: '20%'},{top: '40%'}), // button
-					TweenMax.fromTo(scene1_layer1, 1, {y: '0%'},{y: '-4%'}), // characters
-					TweenMax.fromTo(scene1_layer2, 1, {y: '-2%'},{y: '8%'}), // monsters front
-					TweenMax.fromTo(scene1_layer3, 1, {y: -'3%'},{y: '4.8%'}), // monsters back
-					TweenMax.fromTo(scene1_layer4, 1, {y: '-6%'},{y: '15%'}), // temple
-					TweenMax.fromTo(scene1_layer5, 1, {y: '-10%'},{y: '20%'}), // sky
+//             var controller = new ScrollMagic.Controller();
+// 			var tween = new TimelineMax ()
+// 				.add([
+// 					TweenMax.fromTo(scene_cta, 1, {top: '20%'},{top: '40%'}), // button
+// 					TweenMax.fromTo(scene1_layer1, 1, {y: '0%'},{y: '-4%'}), // characters
+// 					TweenMax.fromTo(scene1_layer2, 1, {y: '-2%'},{y: '8%'}), // monsters front
+// 					TweenMax.fromTo(scene1_layer3, 1, {y: -'3%'},{y: '4.8%'}), // monsters back
+// 					TweenMax.fromTo(scene1_layer4, 1, {y: '-6%'},{y: '15%'}), // temple
+// 					TweenMax.fromTo(scene1_layer5, 1, {y: '-10%'},{y: '20%'}), // sky
 
-				]);
-			var scene = new ScrollMagic.Scene({triggerElement: 0, duration: 2000})
-				.setTween(tween)
-				.addTo(controller);
-        }
-    }
-})();
+// 				]);
+// 			var scene = new ScrollMagic.Scene({triggerElement: 0, duration: 2000})
+// 				.setTween(tween)
+// 				.addTo(controller);
+//         }
+//     }
+// })();
 
 
 
