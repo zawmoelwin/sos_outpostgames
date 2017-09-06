@@ -231,6 +231,9 @@ nav {height:3.75rem}
 /* ---------- End Active Nav Color ---------- */
 
 @media screen and (max-width:70em) {
+  .second-nav-wrapper{
+    visibility: hidden;
+  }
 
     #social-links {
         float: none;
@@ -246,6 +249,7 @@ nav {height:3.75rem}
             letter-spacing: .75px;
         }
     }
+
     /* -------------- End Page Nav -------------- */
 
     #account-buttons {
@@ -381,15 +385,16 @@ main {
 #invitation-view div p {font-size:1rem;margin:10%;max-width:100rem;}
 #invitation-view .banner {height:2rem;}
 
-#invitation-season {position:relative;height:100%; width: 100%;top:5rem;}
-
+#invitation-season {position:relative;height:100%; width: 100%;top:8rem;}
+#invitation-logo-season{margin-bottom:3rem!important ;}
 #invitation-view-season div{height:7.75rem;width:13rem;margin:auto;}
 #invitation-view-season div:nth-child(1) {background:url('../images/svg/_Invitational_logo.svg') no-repeat center center;}
 #invitation-view-season div:nth-child(1) {background-size:auto 100%;}
 #invitation-view-season div:nth-child(2) {background:url('../images/svg/Horizontal_banner.svg') no-repeat center center;}
 #invitation-view-season p {span{ background-color:black;font-size:1rem;font-weight:bold; span{font-size:0.5rem;position: relative; top:-0.5rem; }}}
 #invitation-view-season div p {font-size:1rem;}
-#invitation-view-season .banner {height:2rem;}
+
+#invitation-view-season .banner {position:relative; height:2rem;}
 
 
 #hero {color:#e23849;margin:5% auto; width:100%}
@@ -402,14 +407,14 @@ main {
 #record-view-season div:nth-child(1) {background:url('../images/svg/_record_icon.svg') no-repeat center bottom;}
 #record-view-season div:nth-child(2) {background:url('../images/svg/_send_icon.svg') no-repeat center bottom;}
 #record-view-season div:nth-child(3) {background:url('../images/svg/_impress_icon.svg') no-repeat center bottom;}
-#record-view-season div > p {font-size: 1.3rem; height:9.75rem; width:9.5rem;}
-#record-view-season div:nth-child(1) {background-size:auto 100%}
-#record-view-season div:nth-child(2) {background-size:auto 100%}
-#record-view-season div:nth-child(3) {background-size:auto 100%}
+#record-view-season div > p {font-size: 1.2rem; height:9.75rem; width:9.5rem;}
+#record-view-season div:nth-child(1) {background-size:auto 100%;background-position-y: 1rem;}
+#record-view-season div:nth-child(2) {background-size:auto 100%;background-position-y: 1rem;}
+#record-view-season div:nth-child(3) {background-size:auto 100%;background-position-y: 1rem;}
 
-#record-view-season div:nth-child(1) {background-size:10rem 10rem}
-#record-view-season div:nth-child(2) {background-size:10rem 10rem}
-#record-view-season div:nth-child(3) {background-size:10rem 10rem}
+#record-view-season div:nth-child(1) {background-size:8rem 6rem}
+#record-view-season div:nth-child(2) {background-size:8rem 6rem}
+#record-view-season div:nth-child(3) {background-size:8rem 6rem}
 
 
 
@@ -472,11 +477,22 @@ main {
 
 
 .circle-wrap {
-  width: 100px;
-  height: 100px;
+  width: 2rem;
+  height: 2rem;
   position: relative;
+  top:0.5rem;
+  right:0.1rem ;
+  margin-right:0.2rem ;
   overflow: hidden;
   border-radius: 50%;
+}
+.contestant-name{
+
+}
+
+.contestants-wrapper{
+  margin:auto;
+  max-width: 80rem;
 }
 
 .audition-open-season{
@@ -484,7 +500,8 @@ main {
 }
 
 #faq{
-  margin:10rem auto;
+  margin:auto;
+  margin-bottom: 10rem;
 }
 
 
@@ -649,6 +666,9 @@ main {
     #goals div:nth-child(3) {background-size:8.5rem 4.875rem}#goals div > p {font-size:1.25rem;}
 }
 @media screen and (min-width:37em) {
+  .contestants-wrapper{
+    max-width: 35rem;
+  }
     #record-view div {
       height:11rem;
       width:12rem;
@@ -662,10 +682,10 @@ main {
     #record-view div:nth-child(3) {background-size:12rem 11rem}
 
     #record-view-season div {height:11rem;width:12rem;}
-    #record-view-season div > p {width:18rem;font-size:1.8rem;}
-    #record-view-season div:nth-child(1) {background-size:12rem 11rem}
-    #record-view-season div:nth-child(2) {background-size:12rem 11rem}
-    #record-view-season div:nth-child(3) {background-size:12rem 11rem}
+    #record-view-season div > p {width:16rem;font-size:1.5rem;}
+    #record-view-season div:nth-child(1) {background-size:11rem 10rem}
+    #record-view-season div:nth-child(2) {background-size:11rem 10rem}
+    #record-view-season div:nth-child(3) {background-size:11rem 10rem}
 
 
     #summary {max-width:33rem}
@@ -679,6 +699,7 @@ main {
 }
 @media screen and (min-width:47em) {
 
+  #invitation-logo-season{margin-bottom:5rem !important;}
   .adjuster{top:55rem;}
     #invitation-view-season p { span {font-size:1.8.0rem; font-weight:bold;  span{font-size:1.1rem;}}}
 
@@ -722,6 +743,11 @@ main {
 
 }
 @media screen and (min-width:51.25em) {
+  .contestants-wrapper{
+    max-width: 80rem;
+  }
+  #invitation-season{top:10rem!important;}
+  #invitation-logo-season{margin-bottom:8rem!important;}
   #header-cta{height:35.75rem;width:35rem;margin:auto;}
   .white-logo{height:35.75rem;width:35rem;margin:auto;}
   .adjuster{top:65rem;}
@@ -1470,3 +1496,4 @@ footer {padding-top:2rem}
       padding-top:21.25rem;
   }
 }
+
