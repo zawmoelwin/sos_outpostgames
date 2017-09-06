@@ -16,12 +16,18 @@ body {overflow: visible; background: black;color:white;}
 img.background-season{
   /* Set rules to fill background */
   min-height: 100%;
-  min-width: 1024px;
+  min-width: 100%;
 
   /* Set up proportionate scaling */
   width: 100%;
   height: auto;
 }
+
+.test-relative{
+  width:100%; height: 100%;
+  display: block;
+}
+.position-over{position:absolute}
 
 a, button, input[type="submit"] {transition:color 100ms ease-in-out, border 100ms ease-in-out, background 100ms ease-in-out}
 .messageBox,
@@ -31,7 +37,9 @@ a, button, input[type="submit"] {transition:color 100ms ease-in-out, border 100m
 }
 
 * {outline:none !important;}
-
+.adjuster{
+  top:25rem;
+}
 
 .valid {
   border-color: #fff !important;
@@ -107,6 +115,7 @@ a, button, input[type="submit"] {transition:color 100ms ease-in-out, border 100m
     .h-6-ns {height:.375rem}
     .w-6-ns {width:.375rem}
     .w-40-ns{width:2.5rem}
+    .adjuster{top:32rem;}
 }
 @media screen and (min-width:70em) {
     .db-xl{display:block}
@@ -126,6 +135,7 @@ a, button, input[type="submit"] {transition:color 100ms ease-in-out, border 100m
     .static-xl {position:static}
     .tl-xl {text-align: left}
     .special-nav{display: none;}
+
 }
 
 
@@ -345,10 +355,11 @@ main {
 #invitation-view div p {font-size:1rem;margin:10%;max-width:100rem;}
 #invitation-view .banner {height:2rem;}
 
-#invitation-season {height:100%; width: 50%;}
-#invitation-logo-season{margin-top:5rem!important;}
+#invitation-season {height:100%; width: 100%;top:5rem;}
+
 #invitation-view-season div{height:7.75rem;width:13rem;margin:auto;}
-#invitation-view-season div:nth-child(1) {background:url('../images/svg/_Invitational_logo.svg') no-repeat center center;background-size:auto 100% ;}
+#invitation-view-season div:nth-child(1) {background:url('../images/svg/_Invitational_logo.svg') no-repeat center center;}
+#invitation-view-season div:nth-child(1) {background-size:auto 100%;}
 #invitation-view-season div:nth-child(2) {background:url('../images/svg/Horizontal_banner.svg') no-repeat center center;}
 #invitation-view-season p {font-size:1rem;font-weight:bold;margin:0 10%;  span{font-size:0.5rem;position: relative; top:-0.5rem; }}
 #invitation-view-season div p {font-size:1rem;}
@@ -563,7 +574,7 @@ main {
 }
 @media screen and (min-width:33.875em) {
 
-
+    .adjuster{top:39rem;}
     #record-view div:nth-child(1) {background-size:10rem 10rem}
     #record-view div:nth-child(2) {background-size:10rem 10rem}
     #record-view div:nth-child(3) {background-size:10rem 10rem}
@@ -577,7 +588,7 @@ main {
 }
 @media screen and (min-width:36em) {
 
-
+  .adjuster{top:53rem;}
     #goals div {height:5.8125rem}
     #goals div:nth-child(1) {background-size:3.25rem 5.8125rem}
     #goals div:nth-child(2) {background-size:4.4375rem 5.8125rem}
@@ -613,6 +624,12 @@ main {
     #invitation-view-season p {font-size:1.5rem;margin:0 10%; span{font-size:1.2rem;}}
 }
 @media screen and (min-width:47em) {
+
+  .adjuster{top:55rem;}
+    #invitation-view-season p {font-size:1.8.0rem; font-weight:bold; margin:0 25%; span{font-size:1.1rem;}}
+    #invitation-logo-season{margin-top:3rem;}
+    #invitation-view-season div{height:20rem;width:40rem;margin:auto;}
+    #invitation-view-season div:nth-child(1){background-size:20rem 18rem ;}
 
     #record-view div {        height:12rem;        width:12.75rem;    }
     #record-view div > p {width:16rem;font-size:1.5rem;}
@@ -651,6 +668,8 @@ main {
 
 }
 @media screen and (min-width:51.25em) {
+
+  .adjuster{top:65rem;}
     #record-view { max-width:60rem;}
     #record-view div { height:14rem;       width:18.75rem;    }
     #record-view div > p {width:18rem;font-size:1.8rem;}
@@ -665,10 +684,10 @@ main {
     #record-view-season div:nth-child(2) {background-size:13rem 13rem}
     #record-view-season div:nth-child(3) {background-size:13rem 13rem}
 
-    #invitation-view-season p {font-size:3.0rem; font-weight:bold; margin:0 25%; span{font-size:1.8rem;}}
-    #invitation-logo-season{margin-top:5rem!important;}
-    #invitation-view-season div{height:53.75rem;width:41rem;margin:auto;}
-    #invitation-view-season div:nth-child(1){background-size:41rem 53rem ;}
+    #invitation-view-season p {font-size:2.0rem; font-weight:bold;margin:0 25%; span{font-size:1.2rem;}}
+    #invitation-season{top:15rem;}
+    #invitation-view-season div{height:20rem;width:50rem;margin:auto;}
+    #invitation-view-season div:nth-child(1){background-size:20rem 20rem ;}
     #hero-view p {font-size:1.5rem; margin:0 25%; }
     #goals {margin-top:3.25rem}
     #goals div {
@@ -681,6 +700,7 @@ main {
     #goals div > p {font-size: 1.5rem}
 }
 @media screen and (min-width:67.625em) {
+  .adjuster{top:95rem;}
     #summary{max-width:57rem}
     #summary div {
         height:9.25rem;
@@ -1026,13 +1046,7 @@ width: 100%;}
 @media screen and (min-width:68em) {
     #winners img {width:30.875rem}
 }
-@media screen and (min-width:80em) {
-    #live-premiere-wrap {
-        background-size:101rem 48.1875rem;
-        margin-top:-29.75rem;
-        padding-top:29.75rem
-    }
-}
+
 /* ------------------------------------------ END LIVE PREMIERE ----------------------------------------- */
 
 
@@ -1135,6 +1149,7 @@ form .btn{
 }
 @media screen and (min-width:60em) {
     #support-wrapper{background-size:56.25rem 36.8125rem}
+    .adjuster{top:65rem;}
 }
 @media screen and (min-width:80em) {
     #support-wrapper {
@@ -1143,13 +1158,7 @@ form .btn{
         padding-top:15.0625rem;
     }
 }
-@media screen and (min-width:90em) {
-    #support-wrapper {
-        background-size:96.875rem 63.4375rem;
-        margin-top:-21.25rem;
-        padding-top:21.25rem;
-    }
-}
+
 /* --------------------------------------------- END SUPPORT -------------------------------------------- */
 
 
@@ -1273,6 +1282,7 @@ footer {padding-top:2rem}
     }
     #social {margin-bottom:18.125rem}
     #footer-nav > div > a:nth-child(3) {padding-bottom:.3rem}
+    .adjuster{top:80rem;}
 
 }
 
@@ -1359,4 +1369,24 @@ footer {padding-top:2rem}
 .black-background{
   background: black;
   color: white;
+}
+
+
+//
+@media screen and (min-width:80em) {
+  #live-premiere-wrap {
+      background-size:101rem 48.1875rem;
+      margin-top:-29.75rem;
+      padding-top:29.75rem
+  }
+  .adjuster{top:100rem;}
+}
+
+@media screen and (min-width:90em) {
+  .adjuster{top:110rem;}
+  #support-wrapper {
+      background-size:96.875rem 63.4375rem;
+      margin-top:-21.25rem;
+      padding-top:21.25rem;
+  }
 }
