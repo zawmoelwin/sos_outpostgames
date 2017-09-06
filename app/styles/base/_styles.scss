@@ -294,6 +294,20 @@ nav {height:3.75rem}
 
 
 /* ----------------------------------------------- HEADER ----------------------------------------------- */
+a.button {
+  font-size: 15px;
+  padding: 18px 24px;
+  margin-top: 24px;
+  max-width: 16rem;
+}
+a.button:hover {
+  background: $hover;
+  border-color: $hover;
+}
+a.button:active {
+  background: $active;
+  border-color: $active;
+}
 
 
 #header-cta a{
@@ -346,6 +360,14 @@ main {
 /* ----------------------------------------------- END MAIN ---------------------------------------------- */
 
 /* ---------------------------------------------- Record-view ---------------------------------------------- */
+
+.proud-present{
+  max-width: 80%;
+    div {
+      min-width: 20rem;
+      margin:auto;
+    }
+}
 .white-logo{height:7.75rem;width:13rem;margin:auto;}
 
 #invitation {height:100%}
@@ -443,6 +465,33 @@ main {
 #embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
 #embed-container iframe, #embed-container object, #embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 /* End Video Embed */
+
+
+
+
+.circle-wrap {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.audition-open-season{
+  margin:auto;
+}
+
+#faq{
+  margin:10rem auto;
+}
+
+
+
+
+
+
+
+
 
 /*----------------------------------start of four boxes-------------------------------------------*/
 

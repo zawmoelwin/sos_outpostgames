@@ -1,0 +1,138 @@
+
+<!-- Beta-->
+<div id="support-wrapper">
+  <div class="bg-gfreen ph3 tc signup ph4-ns" id="beta">
+  <h1 class="center f-32 fw8 gold ttu f-50-ns">Accepting applications for our closed beta</h1>
+
+
+  <h2 class="f3 fw7 mb0 red ttu f-30-ns">Dates to be announced</h2>
+
+
+  <p class="center f3 lh-title red f3-ns">Follow SOS on Twitter and <br>Facebook for updates</p>
+
+
+  <!-- <form class="center" id="alpha-signup" name="alpha-signup">
+    <div class="form-group">
+
+      <input class="bl-0 br-0 bt-0 center db gray input-reset pt1 tc tracked-narrow w-100" id="email" name="email" placeholder="Enter Email Address" type="email">
+      <div class="g-recaptcha"
+        data-sitekey="6Lfo0hYUAAAAAEBnbDhZ9j1PMQAjLDyuwf7JTaWT"
+        data-callback="onRecaptchaResponse">
+      </div>
+      <input id="honey" name="honey" type="hidden">
+      <input required class="bg-red bn br2 center db f4 fw8 pointer tracked ttu white w-100" id="submit" disabled type="submit" value="Submit">
+      <div id="signup-success" class="hidden">
+  Check your inbox to confirm your email address<br/>
+  and secure your spot on the waitlist.
+  </div>
+
+
+      <div class="messageBox" id="validationBox">
+      </div>
+
+      <div class="success-message messageBox show-on-success hidden">
+        <p class="mb">Thanks for signing up!</p>
+      </div>
+
+      <div class="success-message messageBox show-on-fail hidden">
+        <p class="mb">
+        </p>
+      </div>
+      <a class="db f5 fw7 hover-light-silver link red ttu" href="https://www.outpostgames.com/signup" id="code">Already have a code?</a>
+    </div>
+  </form> -->
+    <div id="signup-form">
+    <form class="center">
+      <div id="signup-error" class="hidden"></div>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        class="bl-0 br-0 bt-0 center db gray input-reset pt1 tc tracked-narrow w-100 input"
+        placeholder="Enter Email"
+        required />
+      <!-- <div class="g-recaptcha "
+        data-sitekey="6Lfo0hYUAAAAAEBnbDhZ9j1PMQAjLDyuwf7JTaWT"
+        data-callback="onRecaptchaResponse">
+      </div> -->
+      <input class="btn bg-red bn br2 center db f4 fw8 pointer tracked ttu white w-100" id="signup-btn" type="submit" value="SUBMIT" disabled />
+      <a class="db f6 fw7 hover-light-silver link red ttu" href="https://www.outpostgames.com/signup" id="code">Already have a code?</a>
+    </form>
+      <div id="signup-success" class="hidden">
+        Check your inbox to confirm your email address<br/>
+        and secure your spot on the waitlist.
+      </div>
+    <script type="text/javascript">
+    var OG_API = 'https://www.outpostgames.com';
+    var SIGNUP_ERRORS = {
+    'email': 'Please enter a valid email',
+    'g-recaptcha-respose': 'Please complete the captcha'
+    };
+    var SIGNUP_ERROR_UNKNOWN = 'Signup is temporarily unavailable. Please try again later.';
+
+    var btn = $('#signup-btn');
+    var disableSignupForm = btn.attr.bind(btn, 'disabled', 'disabled');
+    var enableSignupForm = btn.attr.bind(btn, 'disabled', false);
+    var successMsg = $('#signup-success');
+    var error = $('#signup-error');
+
+    // function onRecaptchaResponse(response) {
+    enableSignupForm();
+    // }
+
+    $(function () {
+    $('#signup-form form').submit(function (e) {
+    e.preventDefault();
+    disableSignupForm();
+
+    // 200 - OK Success, no body
+    // 400 - Bad Request, body contains details
+    // 500 - Shit --> Fan, retry
+    // 503 - Service Unavailable, we've intentionally disabled it for some reason
+    $.ajax({
+      type:'POST',
+      url: OG_API + '/api/waitlist',
+      contentType: 'application/json',
+      processData: false,
+      data: JSON.stringify(
+        $(this).serializeArray()
+              .reduce(function (m, f) {
+                m[f.name] = f.value;
+                return m;
+              }, { })
+      )
+    }).done(function (data/*, textStatus, jqXHR */) {
+
+      $('#signup-form form').hide();
+      successMsg.removeClass('hidden');
+      ga('send', 'event', 'alpha', 'signup');
+    }).fail(function (jqXHR/*, textStatus, errorThrown */) {
+
+      switch (jqXHR.status) {
+        case 400:
+          if (jqXHR.responseJSON.error === 'validation-error') {
+            var errors = Object.keys(jqXHR.responseJSON.metadata[0].body)
+                              .reduce(function (arr, k) {
+                                $('#signup-form form #' + k).val('');
+                                arr.push(SIGNUP_ERRORS[k]);
+                                return arr;
+                              }, []);
+            error.html(errors.join('<br/>'));
+          }
+          break;
+        default:
+          error.html(SIGNUP_ERROR_UNKNOWN);
+      }
+      error.removeClass('hidden');
+      enableSignupForm();
+      ga('send', 'event', 'alpha', 'signup-error');
+    });
+    });
+    });
+    </script>
+
+    </div>
+
+  </div>
+</div>
+<!-- END Beta -->
