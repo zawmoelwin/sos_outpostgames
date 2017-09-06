@@ -349,7 +349,7 @@ main {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 300%;
-    border-top:.75rem solid #6c302a
+
 }
 @media screen and (min-width:30em) {
     main {background-size: 62.5rem 39.9375rem}
@@ -1109,6 +1109,23 @@ width: 100%;}
 
 
 /* ------------------------------------------ PAGE DIVIDER TWO ------------------------------------------ */
+
+#divider-skull {margin-top:3.875rem; margin-bottom:1.5rem ;}
+
+#divider-skull-left,
+#divider-skull-right {margin-top:.75rem}
+#skull-red {
+  min-width:6rem;
+  width:6rem
+}
+#skull-red img {
+  height:3.625rem;
+  width:3.25rem
+}
+
+
+
+
 #divider-two {margin-top:3.875rem}
 #divider-two-left,
 #divider-two-right {margin-top:.75rem}
@@ -1124,6 +1141,12 @@ width: 100%;}
     #divider-two {margin-top:5.9375rem}
     #divider-two-left,
     #divider-two-right {margin-top:1.125rem}
+
+    #divider-skull {margin-top:5.9375rem}
+    #divider-skull-left,
+    #divider-skull-right {margin-top:1.125rem}
+
+
     #punch {
         min-width:10.75rem;
         width:10.75rem
