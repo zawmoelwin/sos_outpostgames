@@ -1,0 +1,50 @@
+
+/*-----------------------------------------BACKGROUND IMAGES START------------------------------------------------*/
+
+
+
+#faq {
+  background: url('../images/svg/_background_hupia.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+
+}
+
+main {
+  background: url('../images/svg/_background_snake.svg');
+  background-repeat: no-repeat;
+  background-position-y: 50rem;
+  background-position-x: center;
+  background-size: 30%;
+
+}
+
+
+.audition-open-season{
+  background: url('../images/svg/temple_background.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+  min-height:25rem ;
+
+}
+
+// .audition-open-season::before {
+//   content: " ";
+//   position: absolute;
+//   background-size: 100%;
+//   z-index: -1;
+//   background: url('../images/svg/temple_background.svg');
+// }
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------BACKGROUND IMAGES END----------------------------------------------*/
