@@ -19,6 +19,13 @@
     overflow: hidden;
     // margin-bottom: -280px;
 }
+.site-header-layout-2 {
+  position: relative;
+  padding-bottom: 100%;
+  // height: 1860px;
+  overflow: hidden;
+  // margin-bottom: -280px;
+}
 /*Layers*/
 .scene-layer {
     position: absolute;
@@ -78,6 +85,7 @@
 #scene-2 img {
         display: block;
         max-width: 100%;
+
         margin: 0 auto;
         position: relative;
         width: 100%;
@@ -98,15 +106,26 @@ main {position: relative;z-index: 10;}
 /* ---------------------------------- CTA ---------------------------------- */
 #header-cta {
   width: 100%;
-  max-width:15.5rem;
+  max-width:25.5rem;
   position: absolute;
   z-index: 20;
-  top: 25.25rem;
   left: 50%;
   transform: translate(-50%, -50%);
   will-change:top;
 
 }
+
+.invitation-season-z{
+  width: 100%;
+  max-width:50rem;
+  position: absolute;
+  z-index: 20;
+  will-change:top;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top:35%;
+}
+
 #header-cta img {
   margin: 0 auto;
   display: block;
@@ -123,10 +142,14 @@ main {position: relative;z-index: 10;}
     #scene-2 {position: static;}
 
     .site-header-layout {height: auto;margin-bottom: 0;padding-bottom: 0;}
-
+    .site-header-layout-2 {height: auto;margin-bottom: 0;padding-bottom: 0;}
     #header-cta {
         img {max-width: 100%;}
         top: 16% !important;
     }
+    .invitation-season-z{
+      #invitation-logo-season {max-width: 100%;}
+      top: 29% !important;
+  }
 
 }

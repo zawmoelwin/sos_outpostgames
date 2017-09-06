@@ -1,124 +1,20 @@
+
 <!doctype html>
 <html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>SOS - Outpost Games</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <title>SOS - Outpost Games</title>
+    <style>.special-nav{display: none;}body{overflow:hidden}#loading{background:#fff;height:100%;width:100%;position:fixed;top:0;left:0;z-index:200}.tr-op{transition:opacity .3s ease-in-out!important}#loading svg{fill:#c64c34;height:91px;width:87px;position:absolute;top:50%;left:50%;z-index:2;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.animated.slow{-webkit-animation-duration:2s;animation-duration:2s}.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}@-webkit-keyframes a{0%{opacity:.5}50%{opacity:1}to{opacity:.5}}@keyframes a{0%{opacity:.5}50%{opacity:1}to{opacity:.5}}.fade-pulse{-webkit-animation-name:a;animation-name:a}.hide{display:none}.hidden,.initH{opacity:0}.delay-01{transition-delay:.1875s!important;transition-delay:375ms!important}.delay-02{transition-delay:.75s!important}#loading.done{opacity:0}</style>
 
-  <style>
-    .special-nav {
-      display: none;
-      !important
-    }
+      <link rel="shortcut icon" href="/images/favicons/sosfavicon-16x16.png">
+      <link rel="apple-touch-icon" href="/images/favicons/sosfavicon-16x16.png">
+  </head>
 
-    body {
-      overflow: hidden
-    }
-
-    #loading {
-      background: #fff;
-      height: 100%;
-      width: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 200
-    }
-
-    .tr-op {
-      transition: opacity .3s ease-in-out!important
-    }
-
-    #loading svg {
-      fill: #c64c34;
-      height: 91px;
-      width: 87px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      z-index: 2;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%)
-    }
-
-    .animated {
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both
-    }
-
-    .animated.slow {
-      -webkit-animation-duration: 2s;
-      animation-duration: 2s
-    }
-
-    .infinite {
-      -webkit-animation-iteration-count: infinite;
-      animation-iteration-count: infinite
-    }
-
-    @-webkit-keyframes a {
-      0% {
-        opacity: .5
-      }
-      50% {
-        opacity: 1
-      }
-      to {
-        opacity: .5
-      }
-    }
-
-    @keyframes a {
-      0% {
-        opacity: .5
-      }
-      50% {
-        opacity: 1
-      }
-      to {
-        opacity: .5
-      }
-    }
-
-    .fade-pulse {
-      -webkit-animation-name: a;
-      animation-name: a
-    }
-
-    .hide {
-      display: none
-    }
-
-    .hidden,
-    .initH {
-      opacity: 0
-    }
-
-    .delay-01 {
-      transition-delay: .1875s!important;
-      transition-delay: 375ms!important
-    }
-
-    .delay-02 {
-      transition-delay: .75s!important
-    }
-
-    #loading.done {
-      opacity: 0
-    }
-  </style>
-
-  <link rel="shortcut icon" href="/images/favicons/sosfavicon-16x16.png">
-  <link rel="apple-touch-icon" href="/images/favicons/sosfavicon-16x16.png">
-</head>
-
-<body>
-  <!-- Loading El -->
+   <!-- Loading El -->
   <header id="loading" class="tr-op">
     <svg class="animated slow infinite fade-pulse"><use xlink:href="images/logos/footer_sos_logo.svg#Shape_18_copy_2"></use></svg>
 
@@ -130,76 +26,90 @@
     NProgress.start();
   </script>
   <style>
-    #nprogress {
-      pointer-events: none
-    }
-
-    #nprogress .bar {
-      background: #ffb700;
-      position: fixed;
-      z-index: 1031;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 6px
-    }
-
-    #nprogress .peg {
-      display: block;
-      position: absolute;
-      right: 0px;
-      width: 100px;
-      height: 100%;
-      opacity: 1.0;
-      -webkit-transform: rotate(3deg) translate(0px, -4px);
-      transform: rotate(3deg) translate(0px, -4px)
-    }
-
-    #nprogress .spinner {
-      display: none
-    }
-
-    .nprogress-custom-parent {
-      overflow: hidden;
-      position: relative
-    }
-
-    .nprogress-custom-parent #nprogress .spinner,
-    .nprogress-custom-parent #nprogress .bar {
-      position: absolute
-    }
+    #nprogress{pointer-events:none}#nprogress .bar{background:#ffb700;position:fixed; z-index:1031;top:0;left:0;width:100%;height:6px}#nprogress .peg{display:block;position:absolute;right:0px;width:100px;height:100%;opacity:1.0;-webkit-transform:rotate(3deg) translate(0px, -4px);transform:rotate(3deg) translate(0px, -4px)}#nprogress .spinner{display:none}.nprogress-custom-parent{overflow:hidden;position:relative}.nprogress-custom-parent #nprogress .spinner,.nprogress-custom-parent #nprogress .bar{position:absolute}
   </style>
 
-  <body class="tk-din-2014 ">
+  <body class="tk-din-2014 black-background">
     <%- include partials/new_header.ejs %>
 
-    <%- include partials/second_nav_header.ejs %>
-
-        <!-- Parallax Hero -->
 
 
+    <!-- Parallax Hero -->
+    <header class="site-header-layout-2 tr-op initH delay-00">
 
+      <section id="scene-2" class="scene-container tr-op">
+        <img data-src="images/scenes/scene-2/scene-2_layer-1-new.jpg" class="lazy-mb">
+      </section>
 
-    <%- include partials/header-cta-season.ejs %>
+      <!-- Sign Up Button-->
+      <%- include partials/header-cta-season.ejs %>
+      <div class="center" id='header-cta'>
 
+      </div>
+    </header>
 
-    <div class='adjuster' style="position:relative">
+    <main class="initH tr-op delay-02">
 
 
       <%- include partials/fourboxes_for_season.ejs %>
-
-
-
       <%- include partials/survival-fame.ejs %>
-
-
-
-          <!-- TODO add ribbon for the div -->
       <%- include partials/proud-present-season.ejs %>
 
 
+<!-- DIVIDER ONE START-->
 
-                  <!-- DIVIDER TWO -->
+<div class="center flex justify-between mw-84 ph3 ph4-ns" id="divider-one">
+  <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-one-left">
+  </div>
+  <div class="flex justify-between" id="middle">
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+
+
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+
+
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+
+
+    <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
+    </div>
+
+
+    <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
+    </div>
+
+
+    <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
+    </div>
+
+
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+
+
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+
+
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+  </div>
+
+  <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-one-right">
+  </div>
+</div>
+<!-- DIVIDER ONE END-->
+
+      <%- include partials/fourboxes.ejs %>
+
+
+
+
+
+      <!-- DIVIDER TWO -->
       <div class="center flex justify-between mw-84 ph3 ph4-ns" id="divider-two">
         <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-two-left">
         </div>
@@ -212,182 +122,342 @@
         <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-two-right">
         </div>
       </div>
-                  <!-- END DIVIDER TWO -->
-      <%- include partials/record_send_impress_for_season.ejs %>
+      <!-- END DIVIDER TWO -->
 
-                    <!-- TODO AUTITION OPEN large white font -->
-      <div>
+
+      <!-- Beta-->
+
+
+    <!-- TODO put the ribbon image in the background  -->
+    <div>JOIN US THE WEEKEND OF</div>
+    <!-- TODO FORMAT THE DATE AND TIME -->
+    <div>SEPTEMBER 30TH & OCTOBER 1ST</div>
+    <div>NOON -6PM PDT</div>
+    <!-- TODO ADD 4 SVG for the proven performers, rising stars, winners, hell of a show  -->
+
+    <%- include partials/record_send_impress.ejs %>
+    <div class='row'>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+
+    <!-- TODO AUTITION OPEN large white font -->
+    <!-- <div>
         AUTITIONS OPEN
-      </div>
-      <!-- TODO AUTITION OPEN medium yellow font -->
-      <div>
+    </div> -->
+
+    <!-- TODO AUTITION OPEN medium yellow font -->
+    <!-- <div>
         Amarant is on the hunt for the world's most entertaining personalities. Audition today for your shot at fame and fortune.
-      </div>
+    </div> -->
 
-      <!-- TODO APPLY NOW button  -->
-      <div class='btn'>
-        APPLY NOW
-      </div>
-      <!-- TODO add single row of seperator -->
+    <!-- TODO APPLY NOW button  -->
+    <!-- <div class='btn'>
+      APPLY NOW
+    </div> -->
+    <!-- TODO add single row of seperator -->
+    <!-- <div>second seperator image here</div> -->
 
 
-                    <!-- DIVIDER TWO -->
-      <div class="center flex justify-between mw-84 ph3 ph4-ns" id="divider-two">
-        <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-two-left">
+    <!-- TODO add single row of seperator -->
+    <!-- <div>chat seperator image here</div> -->
+
+    <!-- TODO USER LIST -->
+
+
+<!-- DIVIDER ONE START-->
+
+<div class="center flex justify-between mw-84 ph3 ph4-ns" id="divider-one">
+  <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-one-left">
+  </div>
+  <div class="flex justify-between" id="middle">
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+
+
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+
+
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+
+
+    <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
+    </div>
+
+
+    <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
+    </div>
+
+
+    <div class="bg-red br2 h-4 w-20 h-6-ns w-40-ns">
+    </div>
+
+
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+
+
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+
+
+    <div class="bg-red br-100 h-4 w-4 h-6-ns w-6-ns">
+    </div>
+  </div>
+
+  <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-one-right">
+  </div>
+</div>
+<!-- DIVIDER ONE END-->
+
+
+
+
+    <!-- Scene JS -->
+    <script src="scenes.js"></script>
+    <link href="styles/scenes.css" rel="stylesheet">
+
+
+
+      <!-- Beta-->
+      <div id="support-wrapper">
+        <div class="bg-gfreen ph3 tc signup ph4-ns" id="beta">
+        <h1 class="center f-32 fw8 gold ttu f-50-ns">Accepting applications for our closed beta</h1>
+
+
+        <h2 class="f3 fw7 mb0 red ttu f-30-ns">Dates to be announced</h2>
+
+
+        <p class="center f3 lh-title red f3-ns">Follow SOS on Twitter and <br>Facebook for updates</p>
+
+
+        <!-- <form class="center" id="alpha-signup" name="alpha-signup">
+          <div class="form-group">
+
+            <input class="bl-0 br-0 bt-0 center db gray input-reset pt1 tc tracked-narrow w-100" id="email" name="email" placeholder="Enter Email Address" type="email">
+            <div class="g-recaptcha"
+              data-sitekey="6Lfo0hYUAAAAAEBnbDhZ9j1PMQAjLDyuwf7JTaWT"
+              data-callback="onRecaptchaResponse">
+            </div>
+            <input id="honey" name="honey" type="hidden">
+            <input required class="bg-red bn br2 center db f4 fw8 pointer tracked ttu white w-100" id="submit" disabled type="submit" value="Submit">
+            <div id="signup-success" class="hidden">
+    Check your inbox to confirm your email address<br/>
+    and secure your spot on the waitlist.
+  </div>
+
+
+            <div class="messageBox" id="validationBox">
+            </div>
+
+            <div class="success-message messageBox show-on-success hidden">
+              <p class="mb">Thanks for signing up!</p>
+            </div>
+
+            <div class="success-message messageBox show-on-fail hidden">
+              <p class="mb">
+              </p>
+            </div>
+            <a class="db f5 fw7 hover-light-silver link red ttu" href="https://www.outpostgames.com/signup" id="code">Already have a code?</a>
+          </div>
+        </form> -->
+      <div id="signup-form">
+        <form class="center">
+          <div id="signup-error" class="hidden"></div>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            class="bl-0 br-0 bt-0 center db gray input-reset pt1 tc tracked-narrow w-100 input"
+            placeholder="Enter Email"
+            required />
+          <!-- <div class="g-recaptcha "
+            data-sitekey="6Lfo0hYUAAAAAEBnbDhZ9j1PMQAjLDyuwf7JTaWT"
+            data-callback="onRecaptchaResponse">
+          </div> -->
+          <input class="btn bg-red bn br2 center db f4 fw8 pointer tracked ttu white w-100" id="signup-btn" type="submit" value="SUBMIT" disabled />
+          <a class="db f6 fw7 hover-light-silver link red ttu" href="https://www.outpostgames.com/signup" id="code">Already have a code?</a>
+        </form>
+        <div id="signup-success" class="hidden">
+    Check your inbox to confirm your email address<br/>
+    and secure your spot on the waitlist.
+  </div>
+        <script type="text/javascript">
+    var OG_API = 'https://www.outpostgames.com';
+    var SIGNUP_ERRORS = {
+      'email': 'Please enter a valid email',
+      'g-recaptcha-respose': 'Please complete the captcha'
+    };
+    var SIGNUP_ERROR_UNKNOWN = 'Signup is temporarily unavailable. Please try again later.';
+
+    var btn = $('#signup-btn');
+    var disableSignupForm = btn.attr.bind(btn, 'disabled', 'disabled');
+    var enableSignupForm = btn.attr.bind(btn, 'disabled', false);
+    var successMsg = $('#signup-success');
+    var error = $('#signup-error');
+
+    // function onRecaptchaResponse(response) {
+      enableSignupForm();
+    // }
+
+    $(function () {
+      $('#signup-form form').submit(function (e) {
+        e.preventDefault();
+        disableSignupForm();
+
+        // 200 - OK Success, no body
+        // 400 - Bad Request, body contains details
+        // 500 - Shit --> Fan, retry
+        // 503 - Service Unavailable, we've intentionally disabled it for some reason
+        $.ajax({
+          type:'POST',
+          url: OG_API + '/api/waitlist',
+          contentType: 'application/json',
+          processData: false,
+          data: JSON.stringify(
+            $(this).serializeArray()
+                   .reduce(function (m, f) {
+                     m[f.name] = f.value;
+                     return m;
+                   }, { })
+          )
+        }).done(function (data/*, textStatus, jqXHR */) {
+
+          $('#signup-form form').hide();
+          successMsg.removeClass('hidden');
+          ga('send', 'event', 'alpha', 'signup');
+        }).fail(function (jqXHR/*, textStatus, errorThrown */) {
+
+          switch (jqXHR.status) {
+            case 400:
+              if (jqXHR.responseJSON.error === 'validation-error') {
+                var errors = Object.keys(jqXHR.responseJSON.metadata[0].body)
+                                   .reduce(function (arr, k) {
+                                     $('#signup-form form #' + k).val('');
+                                     arr.push(SIGNUP_ERRORS[k]);
+                                     return arr;
+                                   }, []);
+                error.html(errors.join('<br/>'));
+              }
+              break;
+            default:
+              error.html(SIGNUP_ERROR_UNKNOWN);
+          }
+          error.removeClass('hidden');
+          enableSignupForm();
+          ga('send', 'event', 'alpha', 'signup-error');
+        });
+      });
+    });
+  </script>
+
+</div>
+        <div class="center flex items-center justify-between" id="availability">
+          <img src="images/logos/windows.svg">
+
+          <p class="dark-red f5 fw7 pt1 tl tracked-narrow ttu">Available on<br>
+          Windows 7 & Up</p>
         </div>
-
-
-        <div class="tc" id="punch"><img src="images/icons/punch.svg">
-        </div>
-
-
-        <div class="bg-red br1 h-2 ie-flex-shrink w-100 h-4-ns" id="divider-two-right">
+        <img id="papaya" src="images/icons/papaya.svg">
         </div>
       </div>
-          <!-- END DIVIDER TWO -->
+      <!-- END Beta -->
+    </main>
 
-          <!-- TODO USER LIST -->
-      <%- include partials/list_of_user.ejs %>
-
-            <!-- TODO add single row of seperator -->
-            <div>chat seperator image here</div>
-
-            <!-- TODO USER LIST -->
-            <%- include partials/faq.ejs %>
-
-              <!-- Scene JS -->
-              <script src="scenes.js"></script>
-              <link href="styles/scenes.css" rel="stylesheet">
-
-              </div>
-              <!-- Footer -->
-              <footer id="site-footer" class="initH tr-op bg-near-white ph3 ph4-ns">
-                <div class="center mw-80 relative" id="footer-wrapper">
-                  <div class="b--moon-gray bb flex justify-between ph1-l">
-                    <!-- SOS Logo -->
-                    <img class="db footer-logos" id="sos-logo" src="images/logos/footer_sos_logo.svg">
-                    <!-- End SOS Logo -->
-                    <!-- Outpost Games Logo -->
-                    <a href="https://corp.outpostgames.com" class="outpost-logo-wrap" target="_blank">
+    <!-- Footer -->
+    <footer id="site-footer" class="initH tr-op bg-near-white ph3 ph4-ns">
+      <div class="center mw-80 relative" id="footer-wrapper">
+        <div class="b--moon-gray bb flex justify-between ph1-l">
+          <!-- SOS Logo -->
+          <img class="db footer-logos" id="sos-logo" src="images/logos/footer_sos_logo.svg"> <!-- End SOS Logo -->
+           <!-- Outpost Games Logo -->
+           <a href="https://corp.outpostgames.com" class="outpost-logo-wrap" target="_blank">
            <img class="db footer-logos" id="outpost-logo" src="images/logos/outpost_logo.svg"> <!-- End Outpost Games Logo -->
            </a>
-                  </div>
+        </div>
 
 
-                  <div class="flex flex-wrap justify-between ph1-l">
-                    <div class="flex justify-between w-100" id="footer-nav">
-                      <div class="flex flex-column items-start">
-                        <a class="dim f-13 fw7 lh-title no-underline pb_6 red tracked ttu" data-scroll href="#beta">Beta Sign Up</a>
-                        <a class="dim f-13 fw7 gray lh-title no-underline pb_6 tracked ttu" target="_blank" href="https://corp.outpostgames.com/">About Outpost Games</a>
-                        <a class="dim f-13 fw7 gray lh-title no-underline pb3 tracked ttu" target="_blank" href="https://corp.outpostgames.com/#careers">Careers</a>
-                      </div>
+        <div class="flex flex-wrap justify-between ph1-l">
+          <div class="flex justify-between w-100" id="footer-nav">
+            <div class="flex flex-column items-start">
+              <a class="dim f-13 fw7 lh-title no-underline pb_6 red tracked ttu" data-scroll href="#beta">Beta Sign Up</a>
+              <a class="dim f-13 fw7 gray lh-title no-underline pb_6 tracked ttu" target="_blank" href="https://corp.outpostgames.com/">About Outpost Games</a>
+              <a class="dim f-13 fw7 gray lh-title no-underline pb3 tracked ttu" target="_blank"  href="https://corp.outpostgames.com/#careers">Careers</a>
+            </div>
 
 
-                      <div class="flex flex-column items-start">
-                        <a class="dim f-13 fw7 gray lh-title no-underline pb_6 tracked ttu" target="_blank" href="https://corp.outpostgames.com/#team">Team</a>
-                        <a class="dim f-13 fw7 gray lh-title no-underline pb_6 tracked ttu" target="_blank" href="https://www.outpostgames.com/legal/community-standards">Code of Conduct</a>
-                        <a class="dim f-13 fw7 gray lh-title no-underline pb3 tracked ttu" target="_blank" href="https://www.outpostgames.com/legal/terms">Terms</a>
-                      </div>
-                    </div>
+            <div class="flex flex-column items-start">
+              <a class="dim f-13 fw7 gray lh-title no-underline pb_6 tracked ttu" target="_blank" href="https://corp.outpostgames.com/#team">Team</a>
+              <a class="dim f-13 fw7 gray lh-title no-underline pb_6 tracked ttu" target="_blank" href="https://www.outpostgames.com/legal/community-standards">Code of Conduct</a>
+              <a class="dim f-13 fw7 gray lh-title no-underline pb3 tracked ttu" target="_blank"  href="https://www.outpostgames.com/legal/terms">Terms</a>
+            </div>
+          </div>
 
 
-                    <p class="f-10 fw7 gray self-end tracked tc ttu w-100" id="copyright">&copy;
-                      <script type="text/javascript">
-                        document.write(new Date().getFullYear());
-                      </script> Outpost Games</p>
-                  </div>
-                  <!-- Social Media Links -->
+          <p class="f-10 fw7 gray self-end tracked tc ttu w-100" id="copyright">&copy;
+          <script type="text/javascript">
+          document.write(new Date().getFullYear());
+          </script> Outpost Games</p>
+        </div>
+        <!-- Social Media Links -->
 
 
-                  <div class="absolute bottom-0 center flex justify-between left-0 right-0" id="social">
+        <div class="absolute bottom-0 center flex justify-between left-0 right-0" id="social">
 
 
-                    <a class="no-underline" href="https://www.facebook.com/playsosgame" target="_blank"><svg class="red hover-light-silver" style="fill:currentColor;" viewbox="0 0 9 19" xmlns="http://www.w3.org/2000/svg">
+          <a class="no-underline" href="https://www.facebook.com/playsosgame" target="_blank"><svg class="red hover-light-silver" style="fill:currentColor;" viewbox="0 0 9 19" xmlns="http://www.w3.org/2000/svg">
           <path d="M9,4.82H7.36c-1.28,0-1.52.6-1.52,1.47V8.22H8.9l-.41,3H5.84V19H2.66V11.25H0v-3H2.66V6a3.68,3.68,0,0,1,4-4A20.7,20.7,0,0,1,9,2.12Z"></path></svg></a>
 
-                    <a class="no-underline" href="https://twitter.com/playsosgame" target="_blank"><svg class="red hover-light-silver" style="fill:currentColor;" viewbox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+          <a class="no-underline" href="https://twitter.com/playsosgame" target="_blank"><svg class="red hover-light-silver" style="fill:currentColor;" viewbox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
           <path d="M14.36,7.88c0,.14,0,.28,0,.43A9.27,9.27,0,0,1,5,17.64a9.26,9.26,0,0,1-5-1.47,6.74,6.74,0,0,0,.79,0,6.57,6.57,0,0,0,4.07-1.4A3.29,3.29,0,0,1,1.8,12.53a4.12,4.12,0,0,0,.62.05,3.46,3.46,0,0,0,.86-.11A3.28,3.28,0,0,1,.65,9.25v0a3.3,3.3,0,0,0,1.48.42,3.29,3.29,0,0,1-1-4.39A9.32,9.32,0,0,0,7.88,8.67a3.69,3.69,0,0,1-.08-.75,3.28,3.28,0,0,1,5.67-2.24,6.46,6.46,0,0,0,2.08-.79,3.27,3.27,0,0,1-1.44,1.81A6.57,6.57,0,0,0,16,6.19,7,7,0,0,1,14.36,7.88Z"></path></svg></a>
 
-                    <a class="no-underline" href="https://www.twitch.tv/outpostgames" target="_blank"><svg class="red hover-light-silver" style="fill:currentColor;" viewbox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+          <a class="no-underline" href="https://www.twitch.tv/outpostgames" target="_blank"><svg class="red hover-light-silver" style="fill:currentColor;" viewbox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
           <path d="M16,12.35l-4.36,4.43H8.32L6.14,19H4V16.78H0V5l1.1-3H16ZM14.5,11.6V3.48H2.5V14.2H5.77v2.22L8,14.2h4ZM8,10.87H6.5V6.43H8Zm4,0H10.5V6.43H12Z"></path></svg></a>
 
-                    <a class="no-underline" href="https://www.youtube.com/sos" target="_blank"><svg class="red hover-light-silver" style="fill:currentColor;" viewbox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+          <a class="no-underline" href="https://www.youtube.com/sos" target="_blank"><svg class="red hover-light-silver" style="fill:currentColor;" viewbox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
           <path d="M15.3,3.83a2.51,2.51,0,0,1,1.81.78,3.29,3.29,0,0,1,.71,1.84,25.62,25.62,0,0,1,.18,3v1.4a25.61,25.61,0,0,1-.18,3,3.34,3.34,0,0,1-.71,1.84,2.54,2.54,0,0,1-1.81.77s-2.51.2-6.3.2c-4.68,0-6.11-.19-6.11-.19a3,3,0,0,1-2-.78,3.34,3.34,0,0,1-.71-1.84,25.61,25.61,0,0,1-.18-3V9.44a25.62,25.62,0,0,1,.18-3A3.29,3.29,0,0,1,.9,4.61,2.51,2.51,0,0,1,2.7,3.83S5.21,3.64,9,3.64,15.3,3.83,15.3,3.83ZM12,10,7.14,7.35v5.19Z"></path></svg></a>
 
-                    <a class="no-underline" href="https://www.reddit.com/r/sosgame" target="_blank"><svg class="red hover-light-silver" style="fill:currentColor;" viewbox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+          <a class="no-underline" href="https://www.reddit.com/r/sosgame" target="_blank"><svg class="red hover-light-silver" style="fill:currentColor;" viewbox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
           <path d="M16.9,10.43a3.86,3.86,0,0,1,.12,1c0,3.18-3.58,5.75-8,5.75s-8-2.57-8-5.75a4.19,4.19,0,0,1,.11-.94A2,2,0,0,1,2,6.64a2,2,0,0,1,1.46.63A9.68,9.68,0,0,1,8.63,5.65L9.79.41A.35.35,0,0,1,10.2.15L13.91,1a1.5,1.5,0,1,1-.16.68L10.4.9l-1,4.74a9.73,9.73,0,0,1,5.21,1.61A2,2,0,0,1,16,6.64a2,2,0,0,1,.9,3.79ZM5.7,12.15a1.5,1.5,0,1,0-1.5-1.51A1.5,1.5,0,0,0,5.7,12.15Zm6.64,1.54a.36.36,0,0,0-.51,0A4.37,4.37,0,0,1,9,14.51a4.37,4.37,0,0,1-2.82-.82.36.36,0,0,0-.51,0,.36.36,0,0,0,0,.52,5.17,5.17,0,0,0,3.33,1,5.17,5.17,0,0,0,3.33-1A.36.36,0,0,0,12.33,13.68Zm1.47-3a1.5,1.5,0,1,0-1.5,1.51A1.5,1.5,0,0,0,13.8,10.64Z"></path></svg></a>
-                  </div>
-                  <!-- End Social Media Links -->
-                </div>
-              </footer>
-              <!-- END OF FOOTER  -->
+        </div>
+        <!-- End Social Media Links -->
+      </div>
+    </footer>
 
-              <link rel="stylesheet" href="styles/app.css">
-              <!-- <script src="https://use.typekit.net/zok1cii.js"></script>
+    <link rel="stylesheet" href="styles/app.css">
+    <!-- <script src="https://use.typekit.net/zok1cii.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script> -->
-              <script src="https://use.typekit.net/usc4txk.js"></script>
-              <script>
-                try {
-                  Typekit.load({
-                    async: true
-                  });
-                } catch (e) {}
-              </script>
-              <script>
-                (function(d) {
-                  var config = {
-                      kitId: 'usc4txk',
-                      scriptTimeout: 3000,
-                      async: true
-                    },
-                    h = d.documentElement,
-                    t = setTimeout(function() {
-                      h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-                    }, config.scriptTimeout),
-                    tk = d.createElement("script"),
-                    f = false,
-                    s = d.getElementsByTagName("script")[0],
-                    a;
-                  h.className += " wf-loading";
-                  tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-                  tk.async = true;
-                  tk.onload = tk.onreadystatechange = function() {
-                    a = this.readyState;
-                    if (f || a && a != "complete" && a != "loaded") return;
-                    f = true;
-                    clearTimeout(t);
-                    try {
-                      Typekit.load(config)
-                    } catch (e) {}
-                  };
-                  s.parentNode.insertBefore(tk, s)
-                })(document);
-              </script>
-              <!--[if IE]>
+    <script src="https://use.typekit.net/usc4txk.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'usc4txk',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-              <script src="app.js"></script>
-              <script src="SmoothScroll.js"></script>
-              <!-- <script src="scripts/forms.min.js"></script> -->
-              <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="app.js"></script>
+    <script src="SmoothScroll.js"></script>
+    <!-- <script src="scripts/forms.min.js"></script> -->
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 
-              <script>
-                (function(i, s, o, g, r, a, m) {
-                  i['GoogleAnalyticsObject'] = r;
-                  i[r] = i[r] || function() {
-                    (i[r].q = i[r].q || []).push(arguments)
-                  }, i[r].l = 1 * new Date();
-                  a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-                  a.async = 1;
-                  a.src = g;
-                  m.parentNode.insertBefore(a, m)
-                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-                ga('create', 'UA-89928640-6', 'auto');
-                ga('send', 'pageview');
-              </script>
-
+    ga('create', 'UA-89928640-6', 'auto');
+    ga('send', 'pageview');
+    </script>
   </body>
-
 </html>

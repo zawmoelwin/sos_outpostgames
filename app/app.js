@@ -53,8 +53,7 @@ function myFunction(x) {
             document.querySelector('.nav-link-three').addEventListener('click', transformStart);
             document.querySelector('.nav-link-four').addEventListener('click', transformStart);
             document.querySelector('.nav-link-five').addEventListener('click', transformStart);
-            document.querySelector('.nav-link-six').addEventListener('click', transformStart);
-            document.querySelector('.nav-link-seven').addEventListener('click', transformStart);
+
         })();
     } else {
 

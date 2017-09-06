@@ -111,10 +111,13 @@ var load_lg_para_bgs = function(){
 	imagesLoaded( '#scene-1', { background: '.scene-layer' }, function(imgLoad) {
 	  scene_1.addClass('active');
 	  scene_2.removeClass('active');
-	  removeLoader();
-	  setTimeout(function() {
-	  	document.getElementById('scene-1').classList.add('loaded');
-	  }, 1300);
+    removeLoader();
+    if(document.getElementById('scene-1')){
+      setTimeout(function() {
+        document.getElementById('scene-1').classList.add('loaded');
+      }, 1300);
+    }
+
 
 	  // console.log(imgLoad.images.length)
 	});
@@ -170,30 +173,30 @@ var removeLoader = function() {
 //
 // Add Scene
 //
-// var add_scene = (function() {
-// 	var executed = false;
-//     return function () {
-//         if (!executed) {
+var add_scene = (function() {
+	var executed = false;
+    return function () {
+        if (!executed) {
 
-//             executed = true;
+            executed = true;
 
-//             var controller = new ScrollMagic.Controller();
-// 			var tween = new TimelineMax ()
-// 				.add([
-// 					TweenMax.fromTo(scene_cta, 1, {top: '20%'},{top: '40%'}), // button
-// 					TweenMax.fromTo(scene1_layer1, 1, {y: '0%'},{y: '-4%'}), // characters
-// 					TweenMax.fromTo(scene1_layer2, 1, {y: '-2%'},{y: '8%'}), // monsters front
-// 					TweenMax.fromTo(scene1_layer3, 1, {y: -'3%'},{y: '4.8%'}), // monsters back
-// 					TweenMax.fromTo(scene1_layer4, 1, {y: '-6%'},{y: '15%'}), // temple
-// 					TweenMax.fromTo(scene1_layer5, 1, {y: '-10%'},{y: '20%'}), // sky
+            var controller = new ScrollMagic.Controller();
+			var tween = new TimelineMax ()
+				.add([
+					TweenMax.fromTo(scene_cta, 1, {top: '20%'},{top: '40%'}), // button
+					TweenMax.fromTo(scene1_layer1, 1, {y: '0%'},{y: '-4%'}), // characters
+					TweenMax.fromTo(scene1_layer2, 1, {y: '-2%'},{y: '8%'}), // monsters front
+					TweenMax.fromTo(scene1_layer3, 1, {y: '-3%'},{y: '4.8%'}), // monsters back
+					TweenMax.fromTo(scene1_layer4, 1, {y: '-6%'},{y: '15%'}), // temple
+					TweenMax.fromTo(scene1_layer5, 1, {y: '-10%'},{y: '20%'}), // sky
 
-// 				]);
-// 			var scene = new ScrollMagic.Scene({triggerElement: 0, duration: 2000})
-// 				.setTween(tween)
-// 				.addTo(controller);
-//         }
-//     }
-// })();
+				]);
+			var scene = new ScrollMagic.Scene({triggerElement: 0, duration: 2000})
+				.setTween(tween)
+				.addTo(controller);
+        }
+    }
+})();
 
 
 
@@ -203,8 +206,16 @@ var removeLoader = function() {
 $(function() {
 	// Large Mode
 	if (windowWidth >= largeWidth) {
-		load_lg_para_bgs();
-		add_scene();
+  console.log(document.querySelector('#scene-1'));
+  console.log("winodws is larger and scene 1 try load")
+    if (document.querySelector('#scene-1')){
+      load_lg_para_bgs();
+      add_scene();
+    } else {
+      console.log("scene-1 is not present and try load the scene-2");
+      load_sm_hero_img();
+    }
+
 	}
 	// Small Mode
 	else {
@@ -248,13 +259,19 @@ $(function() {
 		},
 		exit: function() {
 			if (scene_1.hasClass('loaded')) {
-				// console.log('scene 1 was already loaded')
+				console.log('scene 1 was already loaded')
 				scene_1.addClass('active');
 				scene_2.removeClass('active');
 			} else {
-				// console.log('load scene 1')
-				load_lg_para_bgs();
-				add_scene();
+        console.log('load scene 1')
+
+        if (document.querySelector('#scene-1')){
+          load_lg_para_bgs();
+          add_scene();
+        } else {
+          console.log("scene-1 is not present and try load the scene-2");
+          load_sm_hero_img();
+        }
 			}
 		}
 	}

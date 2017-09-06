@@ -296,19 +296,19 @@ nav {height:3.75rem}
 /* ----------------------------------------------- HEADER ----------------------------------------------- */
 
 
-// #header-cta a{
-//     font-size: 15px;
-//     padding: 18px 24px;
-//     margin-top: 24px;
-// }
-// #header-cta a:hover {
-//     background: $hover;
-//     border-color: $hover;
-// }
-// #header-cta a:active {
-//     background: $active;
-//     border-color: $active;
-// }
+#header-cta a{
+    font-size: 15px;
+    padding: 18px 24px;
+    margin-top: 24px;
+}
+#header-cta a:hover {
+    background: $hover;
+    border-color: $hover;
+}
+#header-cta a:active {
+    background: $active;
+    border-color: $active;
+}
 
 @media screen and (min-width:23.4375em) {
     #header-cta {padding-top:9.375rem}
@@ -346,6 +346,8 @@ main {
 /* ----------------------------------------------- END MAIN ---------------------------------------------- */
 
 /* ---------------------------------------------- Record-view ---------------------------------------------- */
+.white-logo{height:7.75rem;width:13rem;margin:auto;}
+
 #invitation {height:100%}
 #invitation-logo{margin-top:2rem!important;}
 #invitation-view div{height:23.75rem;width:18rem;margin:auto;}
@@ -355,13 +357,13 @@ main {
 #invitation-view div p {font-size:1rem;margin:10%;max-width:100rem;}
 #invitation-view .banner {height:2rem;}
 
-#invitation-season {height:100%; width: 100%;top:5rem;}
+#invitation-season {position:relative;height:100%; width: 100%;top:5rem;}
 
 #invitation-view-season div{height:7.75rem;width:13rem;margin:auto;}
 #invitation-view-season div:nth-child(1) {background:url('../images/svg/_Invitational_logo.svg') no-repeat center center;}
 #invitation-view-season div:nth-child(1) {background-size:auto 100%;}
 #invitation-view-season div:nth-child(2) {background:url('../images/svg/Horizontal_banner.svg') no-repeat center center;}
-#invitation-view-season p {font-size:1rem;font-weight:bold;margin:0 10%;  span{font-size:0.5rem;position: relative; top:-0.5rem; }}
+#invitation-view-season p {font-size:1rem;font-weight:bold; span{font-size:0.5rem;position: relative; top:-0.5rem; }}
 #invitation-view-season div p {font-size:1rem;}
 #invitation-view-season .banner {height:2rem;}
 
@@ -621,14 +623,14 @@ main {
 
     #four-boxes-season {max-width:33rem}
     #four-boxes-season div {width:6.625rem; margin-top:2rem;}
-    #invitation-view-season p {font-size:1.5rem;margin:0 10%; span{font-size:1.2rem;}}
+    #invitation-view-season p {font-size:1.2rem; span{font-size:1.2rem;}}
 }
 @media screen and (min-width:47em) {
 
   .adjuster{top:55rem;}
-    #invitation-view-season p {font-size:1.8.0rem; font-weight:bold; margin:0 25%; span{font-size:1.1rem;}}
-    #invitation-logo-season{margin-top:3rem;}
-    #invitation-view-season div{height:20rem;width:40rem;margin:auto;}
+    #invitation-view-season p {font-size:1.8.0rem; font-weight:bold;  span{font-size:1.1rem;}}
+
+    #invitation-view-season div{height:20rem;width:25rem;margin:auto;}
     #invitation-view-season div:nth-child(1){background-size:20rem 18rem ;}
 
     #record-view div {        height:12rem;        width:12.75rem;    }
@@ -668,7 +670,8 @@ main {
 
 }
 @media screen and (min-width:51.25em) {
-
+  #header-cta{height:35.75rem;width:35rem;margin:auto;}
+  .white-logo{height:35.75rem;width:35rem;margin:auto;}
   .adjuster{top:65rem;}
     #record-view { max-width:60rem;}
     #record-view div { height:14rem;       width:18.75rem;    }
@@ -684,9 +687,9 @@ main {
     #record-view-season div:nth-child(2) {background-size:13rem 13rem}
     #record-view-season div:nth-child(3) {background-size:13rem 13rem}
 
-    #invitation-view-season p {font-size:2.0rem; font-weight:bold;margin:0 25%; span{font-size:1.2rem;}}
+    #invitation-view-season p {font-size:2.0rem; font-weight:bold; span{font-size:1.2rem;}}
     #invitation-season{top:15rem;}
-    #invitation-view-season div{height:20rem;width:50rem;margin:auto;}
+    #invitation-view-season div{height:20rem;width:25rem;margin:auto;}
     #invitation-view-season div:nth-child(1){background-size:20rem 20rem ;}
     #hero-view p {font-size:1.5rem; margin:0 25%; }
     #goals {margin-top:3.25rem}
